@@ -1,0 +1,13 @@
+# SPDX-FileCopyrightText: 2026 rtoki
+# SPDX-License-Identifier: MIT
+
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/game"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "19:00"
+      timezone: "Asia/Tokyo"
+    open-pull-requests-limit: 5
