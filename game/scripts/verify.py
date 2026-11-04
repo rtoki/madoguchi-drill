@@ -412,6 +412,26 @@ class ScenarioContracts(unittest.TestCase):
         next(page for page in pages if page['key'] == 'instructions-015')['time'] = '16:50'
         validate(pack)  # Mutually exclusive 16:50 and 16:49 pages are not a rollback.
 
+class SecurityHeaders(unittest.TestCase):
+    def test_script_case_preserves_hashes_and_attributes_are_rejected(self):
+        import base64
+        script = "console.log('CaseSensitiveBody');"
+        expected = base64.b64encode(hashlib.sha256(script.encode()).digest()).decode()
+        lower = builder.security_headers(f'<script>{script}</script>')['Content-Security-Policy']
+        self.assertIn(f"'sha256-{expected}'", lower)
+        for opening, closing in [('SCRIPT', 'SCRIPT'), ('ScRiPt', 'sCrIpT')]:
+            with self.subTest(opening=opening):
+                self.assertEqual(builder.security_headers(f'<{opening}>{script}</{closing}>')['Content-Security-Policy'], lower)
+        for html in ['<script src="https://example.org/code.js"></script>',
+                     '<SCRIPT SRC="https://example.org/code.js"></SCRIPT>',
+                     f'<script>{script}</script><ScRiPt src="code.js"></sCrIpT>',
+                     f'<script type="module">{script}</script>',
+                     f'<script nonce="sample">{script}</script>', '<script />']:
+            with self.subTest(html=html):
+                with self.assertRaises(ValueError):
+                    builder.security_headers(html)
+
+
 # scenario-assets
 class ContributorAssets(unittest.TestCase):
     def setUp(self):

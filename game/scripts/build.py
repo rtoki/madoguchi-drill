@@ -72,7 +72,7 @@ def build_icons(root):
 def security_headers(html):
     # Hash the final HTML, after media externalization. Never enable arbitrary
     # inline scripts to accommodate the single-file game's embedded runtime.
-    scripts = re.findall(r'<script>(.*?)</script>', html, re.S)
+    scripts = re.findall(r'<script>(.*?)</script>', html, re.S | re.I)
     if not scripts or len(re.findall(r'<script\b', html, re.I)) != len(scripts):
         raise ValueError('Review CSP before adding external or attributed script tags')
     hashes = sorted({
