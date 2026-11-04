@@ -123,7 +123,7 @@ runSuites({
   assert.equal(g.run('groupedMaterials("presented").length'),0);
   assert.ok(g.run('materialLaunchersHTML()').includes('未提示'));
   click('desk',{group:'presented'});assert.equal(g.run('S.zoom'),null);assert.ok(!g.run('S.win'),'unpresented documents cannot open');
-  assert.ok(g.run('titleHTML()').includes('https://github.com/Memuro-Town/MADO'));
+  assert.ok([...g.run('titleHTML()').matchAll(/href="([^"]+)"/g)].some(([,href])=>href==='https://github.com/Memuro-Town/MADO'));
   assert.ok(g.run('titleHTML()').includes('公開資料を参考に制作'));
   assert.ok(g.run('titleHTML()').includes('非公式'));
   const caseIndex=g.run('CASES.findIndex(c=>c.visitor.docs.length>1)');assert.ok(caseIndex>=0);

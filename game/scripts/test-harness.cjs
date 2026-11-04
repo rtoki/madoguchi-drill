@@ -7,7 +7,7 @@ const assert=require('node:assert/strict');
 const path=require('node:path');
 const root=path.resolve(process.argv[2]||path.join(__dirname,'..'));
 const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
-const code=html.match(/<script>([\s\S]*?)<\/script>/)[1];
+const code=html.match(/<script>([\s\S]*?)<\/script>/i)[1];
 new vm.Script(code);
 
 function boot({photos=true,width=1280,chapterCards=false,reducedMotion=true}={}){
