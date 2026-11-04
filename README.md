@@ -69,7 +69,9 @@ python3 scripts/build.py standalone --scenario starter
 
 提案・PRの採否とマージは、作品の方向性・保守性・利用条件を踏まえてメンテナーが判断します。すべての提案やPRが採用されるとは限りません。
 
-依存パッケージは [Dependabot](.github/dependabot.yml) が毎週月曜19時（日本時間）に更新を確認し、PRを作成します。自動マージは行わず、内容を確認して採否を判断します。
+依存パッケージとGitHub Actionsは [Dependabot](.github/dependabot.yml) が毎週月曜19時（日本時間）に更新を確認し、PRを作成します。自動マージは行わず、内容を確認して採否を判断します。
+
+公開リポジトリのPRでは、型チェック・ビルド・既存の自動検証を [GitHub Actions](https://github.com/rtoki/madoguchi-drill/actions) で実行します。CodeQLでコードを解析し、Dependency Reviewで依存変更に既知の脆弱性がないか確認します。秘密情報の検出とpush保護も有効にしています。自動検証は、実機での操作・音声・動画の確認に代わるものではありません。
 
 ## 題材と注意
 
