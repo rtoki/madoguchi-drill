@@ -1,0 +1,1249 @@
+{
+  "r0": [
+    {
+      "key": "r0-000"
+    },
+    {
+      "key": "r0-001"
+    },
+    {
+      "key": "r0-002"
+    },
+    {
+      "key": "r0-003"
+    },
+    {
+      "key": "r0-004"
+    },
+    {
+      "key": "r0-005"
+    },
+    {
+      "key": "r0-006"
+    },
+    {
+      "key": "r0-007"
+    },
+    {
+      "key": "r0-008"
+    },
+    {
+      "key": "r0-009"
+    },
+    {
+      "key": "r0-010"
+    },
+    {
+      "key": "r0-011"
+    },
+    {
+      "key": "r0-012"
+    },
+    {
+      "key": "r0-013"
+    },
+    {
+      "key": "r0-014"
+    }
+  ],
+  "r2": [],
+  "r1": [
+    {
+      "key": "r1-000"
+    },
+    {
+      "key": "r1-001"
+    },
+    {
+      "key": "r1-002"
+    },
+    {
+      "key": "r1-003"
+    },
+    {
+      "key": "r1-004"
+    },
+    {
+      "key": "r1-005"
+    },
+    {
+      "key": "r1-006"
+    },
+    {
+      "key": "r1-007"
+    },
+    {
+      "key": "r1-008"
+    },
+    {
+      "key": "r1-009"
+    },
+    {
+      "key": "r1-010"
+    },
+    {
+      "key": "r1-011"
+    },
+    {
+      "key": "r1-012"
+    },
+    {
+      "key": "r1-013"
+    },
+    {
+      "key": "r1-014"
+    }
+  ],
+  "memo": [
+    {
+      "key": "memo-000"
+    },
+    {
+      "key": "memo-001"
+    },
+    {
+      "key": "memo-002"
+    },
+    {
+      "key": "memo-003"
+    },
+    {
+      "key": "memo-004"
+    },
+    {
+      "key": "memo-005"
+    },
+    {
+      "key": "memo-006"
+    },
+    {
+      "key": "memo-007"
+    },
+    {
+      "key": "memo-008"
+    },
+    {
+      "key": "memo-009"
+    },
+    {
+      "key": "memo-010"
+    },
+    {
+      "key": "memo-011"
+    },
+    {
+      "key": "memo-012"
+    },
+    {
+      "key": "memo-013"
+    },
+    {
+      "key": "memo-014"
+    },
+    {
+      "key": "memo-015"
+    },
+    {
+      "key": "memo-016"
+    },
+    {
+      "key": "memo-017"
+    },
+    {
+      "key": "memo-018"
+    },
+    {
+      "key": "memo-019"
+    },
+    {
+      "key": "memo-020"
+    },
+    {
+      "key": "memo-021"
+    },
+    {
+      "key": "memo-022"
+    },
+    {
+      "key": "memo-023"
+    },
+    {
+      "key": "memo-024"
+    },
+    {
+      "key": "memo-025"
+    },
+    {
+      "key": "memo-026"
+    },
+    {
+      "key": "memo-027"
+    },
+    {
+      "key": "memo-028"
+    },
+    {
+      "key": "memo-029"
+    },
+    {
+      "key": "memo-030"
+    },
+    {
+      "key": "memo-031"
+    },
+    {
+      "key": "memo-032"
+    },
+    {
+      "key": "memo-033"
+    },
+    {
+      "key": "memo-034"
+    },
+    {
+      "key": "memo-035"
+    },
+    {
+      "key": "memo-036"
+    }
+  ],
+  "stairs": [
+    {
+      "key": "stairs-000"
+    },
+    {
+      "key": "stairs-001"
+    },
+    {
+      "key": "stairs-002"
+    },
+    {
+      "key": "stairs-003"
+    },
+    {
+      "key": "stairs-004"
+    },
+    {
+      "key": "stairs-005",
+      "when": {
+        "stairs": "call"
+      }
+    },
+    {
+      "key": "stairs-006",
+      "when": {
+        "stairs": "call"
+      }
+    },
+    {
+      "key": "stairs-007",
+      "when": {
+        "stairs": "call"
+      }
+    },
+    {
+      "key": "stairs-008",
+      "when": {
+        "stairs": "call"
+      }
+    },
+    {
+      "key": "stairs-009",
+      "when": {
+        "stairs": "call"
+      }
+    },
+    {
+      "key": "stairs-010",
+      "when": {
+        "stairs": "call"
+      }
+    },
+    {
+      "key": "stairs-011",
+      "when": {
+        "stairs": "call"
+      }
+    },
+    {
+      "key": "stairs-012",
+      "when": {
+        "stairs": "call"
+      }
+    },
+    {
+      "key": "stairs-013",
+      "when": {
+        "stairs": "call"
+      }
+    },
+    {
+      "key": "stairs-014",
+      "when": {
+        "stairs": "call"
+      }
+    },
+    {
+      "key": "stairs-015",
+      "when": {
+        "stairs": "call"
+      }
+    },
+    {
+      "key": "stairs-016",
+      "when": {
+        "stairs": "call"
+      }
+    },
+    {
+      "key": "stairs-017",
+      "when": {
+        "stairs": "call"
+      }
+    },
+    {
+      "key": "stairs-018",
+      "when": {
+        "stairs": "supervisor"
+      }
+    },
+    {
+      "key": "stairs-019",
+      "when": {
+        "stairs": "supervisor"
+      }
+    },
+    {
+      "key": "stairs-020",
+      "when": {
+        "stairs": "supervisor"
+      }
+    },
+    {
+      "key": "stairs-021",
+      "when": {
+        "stairs": "supervisor"
+      }
+    },
+    {
+      "key": "stairs-022",
+      "when": {
+        "stairs": "supervisor"
+      }
+    },
+    {
+      "key": "stairs-023",
+      "when": {
+        "stairs": "supervisor"
+      }
+    },
+    {
+      "key": "stairs-024",
+      "when": {
+        "stairs": "supervisor"
+      }
+    },
+    {
+      "key": "stairs-025",
+      "when": {
+        "stairs": "supervisor"
+      }
+    },
+    {
+      "key": "stairs-026",
+      "when": {
+        "stairs": "supervisor"
+      }
+    },
+    {
+      "key": "stairs-027",
+      "when": {
+        "stairs": "supervisor"
+      }
+    },
+    {
+      "key": "stairs-028",
+      "when": {
+        "stairs": "supervisor"
+      }
+    },
+    {
+      "key": "stairs-029",
+      "when": {
+        "stairs": "supervisor"
+      }
+    },
+    {
+      "key": "stairs-030",
+      "when": {
+        "stairs": "supervisor"
+      }
+    },
+    {
+      "key": "stairs-031"
+    },
+    {
+      "key": "stairs-032"
+    },
+    {
+      "key": "stairs-033"
+    },
+    {
+      "key": "stairs-034"
+    },
+    {
+      "key": "stairs-035"
+    },
+    {
+      "key": "stairs-036"
+    }
+  ],
+  "noon": [
+    {
+      "key": "noon-000"
+    },
+    {
+      "key": "noon-001"
+    },
+    {
+      "key": "noon-002"
+    },
+    {
+      "key": "noon-003"
+    },
+    {
+      "key": "noon-004"
+    },
+    {
+      "key": "noon-005"
+    },
+    {
+      "key": "noon-006"
+    },
+    {
+      "key": "noon-007"
+    },
+    {
+      "key": "noon-008"
+    },
+    {
+      "key": "noon-009"
+    },
+    {
+      "key": "noon-010"
+    },
+    {
+      "key": "noon-011"
+    },
+    {
+      "key": "noon-012"
+    },
+    {
+      "key": "noon-013"
+    },
+    {
+      "key": "noon-014"
+    },
+    {
+      "key": "noon-015"
+    },
+    {
+      "key": "noon-016"
+    },
+    {
+      "key": "noon-017"
+    }
+  ],
+  "daughter": [
+    {
+      "key": "daughter-000"
+    },
+    {
+      "key": "daughter-001"
+    },
+    {
+      "key": "daughter-002"
+    },
+    {
+      "key": "daughter-003"
+    },
+    {
+      "key": "daughter-004"
+    },
+    {
+      "key": "daughter-005"
+    },
+    {
+      "key": "daughter-006"
+    },
+    {
+      "key": "daughter-007"
+    },
+    {
+      "key": "daughter-008"
+    },
+    {
+      "key": "daughter-009"
+    },
+    {
+      "key": "daughter-010"
+    },
+    {
+      "key": "daughter-011"
+    },
+    {
+      "key": "daughter-012"
+    },
+    {
+      "key": "daughter-013"
+    },
+    {
+      "key": "daughter-014"
+    },
+    {
+      "key": "daughter-015"
+    }
+  ],
+  "instructions": [
+    {
+      "key": "instructions-000"
+    },
+    {
+      "key": "instructions-001"
+    },
+    {
+      "key": "instructions-002"
+    },
+    {
+      "key": "instructions-003"
+    },
+    {
+      "key": "instructions-004"
+    },
+    {
+      "key": "instructions-005"
+    },
+    {
+      "key": "instructions-006"
+    },
+    {
+      "key": "instructions-007"
+    },
+    {
+      "key": "instructions-008"
+    },
+    {
+      "key": "instructions-009"
+    },
+    {
+      "key": "instructions-010"
+    },
+    {
+      "key": "instructions-011"
+    },
+    {
+      "key": "instructions-012"
+    },
+    {
+      "key": "instructions-013"
+    },
+    {
+      "key": "instructions-014"
+    },
+    {
+      "key": "instructions-015",
+      "when": {
+        "woman": "explain"
+      }
+    },
+    {
+      "key": "instructions-016",
+      "when": {
+        "woman": "explain"
+      }
+    },
+    {
+      "key": "instructions-017",
+      "when": {
+        "woman": "explain"
+      }
+    },
+    {
+      "key": "instructions-018",
+      "when": {
+        "woman": "explain"
+      }
+    },
+    {
+      "key": "instructions-019",
+      "when": {
+        "woman": "explain"
+      }
+    },
+    {
+      "key": "instructions-020",
+      "when": {
+        "woman": "explain"
+      }
+    },
+    {
+      "key": "instructions-021",
+      "when": {
+        "woman": "explain"
+      }
+    },
+    {
+      "key": "instructions-022",
+      "when": {
+        "woman": "explain"
+      }
+    },
+    {
+      "key": "instructions-023",
+      "when": {
+        "woman": "explain"
+      }
+    },
+    {
+      "key": "instructions-024",
+      "when": {
+        "woman": "explain"
+      }
+    },
+    {
+      "key": "instructions-025",
+      "when": {
+        "woman": "explain"
+      }
+    },
+    {
+      "key": "instructions-026",
+      "when": {
+        "woman": "explain"
+      }
+    },
+    {
+      "key": "instructions-027",
+      "when": {
+        "woman": "explain"
+      }
+    },
+    {
+      "key": "instructions-028",
+      "when": {
+        "woman": "explain"
+      }
+    },
+    {
+      "key": "instructions-029",
+      "when": {
+        "woman": "explain"
+      }
+    },
+    {
+      "key": "instructions-030",
+      "when": {
+        "woman": "ask"
+      }
+    },
+    {
+      "key": "instructions-031",
+      "when": {
+        "woman": "ask"
+      }
+    },
+    {
+      "key": "instructions-032",
+      "when": {
+        "woman": "ask"
+      }
+    },
+    {
+      "key": "instructions-033",
+      "when": {
+        "woman": "ask"
+      }
+    },
+    {
+      "key": "instructions-034",
+      "when": {
+        "woman": "ask"
+      }
+    },
+    {
+      "key": "instructions-035",
+      "when": {
+        "woman": "ask"
+      }
+    },
+    {
+      "key": "instructions-036",
+      "when": {
+        "woman": "ask"
+      }
+    },
+    {
+      "key": "instructions-037",
+      "when": {
+        "woman": "ask"
+      }
+    },
+    {
+      "key": "instructions-038",
+      "when": {
+        "woman": "ask"
+      }
+    },
+    {
+      "key": "instructions-039",
+      "when": {
+        "woman": "ask"
+      }
+    },
+    {
+      "key": "instructions-040",
+      "when": {
+        "woman": "ask"
+      }
+    },
+    {
+      "key": "instructions-041",
+      "when": {
+        "woman": "ask"
+      }
+    },
+    {
+      "key": "instructions-042",
+      "when": {
+        "woman": "ask"
+      }
+    },
+    {
+      "key": "instructions-043",
+      "when": {
+        "woman": "ask"
+      }
+    },
+    {
+      "key": "instructions-044",
+      "when": {
+        "woman": "ask"
+      }
+    },
+    {
+      "key": "instructions-045"
+    },
+    {
+      "key": "instructions-046"
+    },
+    {
+      "key": "instructions-047"
+    },
+    {
+      "key": "instructions-048"
+    },
+    {
+      "key": "instructions-049"
+    },
+    {
+      "key": "instructions-050"
+    },
+    {
+      "key": "instructions-051"
+    },
+    {
+      "key": "instructions-052"
+    }
+  ],
+  "consultation": [
+    {
+      "key": "consultation-000"
+    },
+    {
+      "key": "consultation-001"
+    },
+    {
+      "key": "consultation-002"
+    },
+    {
+      "key": "consultation-003"
+    },
+    {
+      "key": "consultation-004"
+    },
+    {
+      "key": "consultation-005"
+    },
+    {
+      "key": "consultation-006"
+    },
+    {
+      "key": "consultation-007"
+    },
+    {
+      "key": "consultation-008"
+    },
+    {
+      "key": "consultation-009"
+    },
+    {
+      "key": "consultation-010"
+    },
+    {
+      "key": "consultation-011"
+    },
+    {
+      "key": "consultation-012"
+    },
+    {
+      "key": "consultation-013"
+    },
+    {
+      "key": "consultation-014"
+    },
+    {
+      "key": "consultation-015"
+    },
+    {
+      "key": "consultation-016"
+    },
+    {
+      "key": "consultation-017"
+    },
+    {
+      "key": "consultation-018"
+    },
+    {
+      "key": "consultation-019"
+    },
+    {
+      "key": "consultation-020"
+    },
+    {
+      "key": "consultation-021"
+    },
+    {
+      "key": "consultation-022"
+    },
+    {
+      "key": "consultation-023"
+    },
+    {
+      "key": "consultation-024"
+    },
+    {
+      "key": "consultation-025"
+    },
+    {
+      "key": "consultation-026"
+    },
+    {
+      "key": "consultation-027"
+    },
+    {
+      "key": "consultation-028"
+    },
+    {
+      "key": "consultation-029"
+    },
+    {
+      "key": "consultation-030"
+    },
+    {
+      "key": "consultation-031"
+    },
+    {
+      "key": "consultation-032"
+    },
+    {
+      "key": "consultation-033"
+    },
+    {
+      "key": "consultation-034"
+    },
+    {
+      "key": "consultation-035"
+    },
+    {
+      "key": "consultation-036"
+    },
+    {
+      "key": "consultation-037"
+    },
+    {
+      "key": "consultation-038"
+    },
+    {
+      "key": "consultation-039"
+    },
+    {
+      "key": "consultation-040"
+    },
+    {
+      "key": "consultation-041"
+    },
+    {
+      "key": "consultation-042"
+    },
+    {
+      "key": "consultation-043"
+    },
+    {
+      "key": "consultation-044"
+    },
+    {
+      "key": "consultation-045"
+    },
+    {
+      "key": "consultation-046"
+    },
+    {
+      "key": "consultation-047"
+    },
+    {
+      "key": "consultation-048"
+    },
+    {
+      "key": "consultation-049"
+    },
+    {
+      "key": "consultation-050"
+    },
+    {
+      "key": "consultation-051"
+    },
+    {
+      "key": "consultation-052"
+    },
+    {
+      "key": "consultation-053"
+    },
+    {
+      "key": "consultation-054"
+    },
+    {
+      "key": "consultation-055"
+    },
+    {
+      "key": "consultation-056"
+    },
+    {
+      "key": "consultation-057"
+    },
+    {
+      "key": "consultation-058"
+    },
+    {
+      "key": "consultation-059"
+    },
+    {
+      "key": "consultation-060"
+    },
+    {
+      "key": "consultation-061"
+    },
+    {
+      "key": "consultation-062"
+    },
+    {
+      "key": "consultation-063"
+    }
+  ],
+  "phone": [
+    {
+      "key": "phone-000"
+    },
+    {
+      "key": "phone-001"
+    },
+    {
+      "key": "phone-002"
+    },
+    {
+      "key": "phone-003"
+    },
+    {
+      "key": "phone-004"
+    },
+    {
+      "key": "phone-005"
+    },
+    {
+      "key": "phone-006"
+    },
+    {
+      "key": "phone-007"
+    },
+    {
+      "key": "phone-008"
+    },
+    {
+      "key": "phone-009"
+    },
+    {
+      "key": "phone-010"
+    },
+    {
+      "key": "phone-011"
+    },
+    {
+      "key": "phone-012"
+    },
+    {
+      "key": "phone-013"
+    },
+    {
+      "key": "phone-014"
+    }
+  ],
+  "deduction": [
+    {
+      "key": "deduction-000"
+    }
+  ],
+  "report": [
+    {
+      "key": "report-000"
+    },
+    {
+      "key": "report-001"
+    },
+    {
+      "key": "report-002"
+    },
+    {
+      "key": "report-003"
+    },
+    {
+      "key": "report-004"
+    },
+    {
+      "key": "report-005"
+    },
+    {
+      "key": "report-006"
+    },
+    {
+      "key": "report-007",
+      "when": {
+        "stairs": "call"
+      }
+    },
+    {
+      "key": "report-008",
+      "when": {
+        "stairs": "supervisor"
+      }
+    },
+    {
+      "key": "report-009"
+    },
+    {
+      "key": "report-010"
+    },
+    {
+      "key": "report-011"
+    },
+    {
+      "key": "report-012",
+      "when": {
+        "woman": "explain"
+      }
+    },
+    {
+      "key": "report-013",
+      "when": {
+        "woman": "ask"
+      }
+    },
+    {
+      "key": "report-014"
+    },
+    {
+      "key": "report-015"
+    },
+    {
+      "key": "report-016"
+    },
+    {
+      "key": "report-017"
+    },
+    {
+      "key": "report-018"
+    },
+    {
+      "key": "report-019"
+    }
+  ],
+  "safety": [
+    {
+      "key": "safety-000"
+    },
+    {
+      "key": "safety-001"
+    },
+    {
+      "key": "safety-002"
+    },
+    {
+      "key": "safety-003"
+    },
+    {
+      "key": "safety-004"
+    },
+    {
+      "key": "safety-005"
+    },
+    {
+      "key": "safety-006"
+    },
+    {
+      "key": "safety-007"
+    },
+    {
+      "key": "safety-008"
+    },
+    {
+      "key": "safety-009"
+    },
+    {
+      "key": "safety-010"
+    },
+    {
+      "key": "safety-011"
+    },
+    {
+      "key": "safety-012"
+    },
+    {
+      "key": "safety-013"
+    },
+    {
+      "key": "safety-014"
+    },
+    {
+      "key": "safety-015",
+      "when": {
+        "stairs": "call"
+      }
+    },
+    {
+      "key": "safety-016",
+      "when": {
+        "stairs": "supervisor"
+      }
+    },
+    {
+      "key": "safety-017"
+    },
+    {
+      "key": "safety-018"
+    },
+    {
+      "key": "safety-019"
+    },
+    {
+      "key": "safety-020"
+    },
+    {
+      "key": "safety-021"
+    },
+    {
+      "key": "safety-022"
+    }
+  ],
+  "next_morning": [
+    {
+      "key": "next_morning-000"
+    },
+    {
+      "key": "next_morning-001"
+    },
+    {
+      "key": "next_morning-002"
+    },
+    {
+      "key": "next_morning-003"
+    },
+    {
+      "key": "next_morning-004"
+    },
+    {
+      "key": "next_morning-005"
+    },
+    {
+      "key": "next_morning-006",
+      "when": {
+        "woman": "explain"
+      }
+    },
+    {
+      "key": "next_morning-007",
+      "when": {
+        "woman": "ask"
+      }
+    },
+    {
+      "key": "next_morning-008"
+    },
+    {
+      "key": "next_morning-009"
+    },
+    {
+      "key": "next_morning-010"
+    },
+    {
+      "key": "next_morning-011"
+    },
+    {
+      "key": "next_morning-012"
+    },
+    {
+      "key": "next_morning-013"
+    },
+    {
+      "key": "next_morning-014"
+    },
+    {
+      "key": "next_morning-015"
+    },
+    {
+      "key": "next_morning-016"
+    },
+    {
+      "key": "next_morning-017"
+    },
+    {
+      "key": "next_morning-018"
+    },
+    {
+      "key": "next_morning-019"
+    }
+  ],
+  "outside": [
+    {
+      "key": "outside-000"
+    },
+    {
+      "key": "outside-001"
+    },
+    {
+      "key": "outside-002",
+      "when": {
+        "woman": "explain"
+      }
+    },
+    {
+      "key": "outside-003",
+      "when": {
+        "woman": "ask"
+      }
+    },
+    {
+      "key": "outside-004"
+    },
+    {
+      "key": "outside-005"
+    }
+  ]
+}

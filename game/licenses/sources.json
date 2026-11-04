@@ -1,0 +1,66 @@
+[
+  {
+    "name": "MADO",
+    "source": "https://github.com/Memuro-Town/MADO/blob/96e0ff86e6ca5f2e99b9479f9d6de3f8c21b603d/LICENSE",
+    "file": "MADO-MIT.txt",
+    "license": "MIT",
+    "sha256": "c8e27fbb4bd31384135ca3ab68e723e9cfd8741f2e0898d99ad954c6b7125c73",
+    "retrieved": "2026-11-03"
+  },
+  {
+    "name": "MADO-packages",
+    "source": "https://github.com/Memuro-Town/MADO-packages/blob/70f912dbbcd67fa9241b38bb891034a9c604c6f9/LICENSE",
+    "file": "MADO-packages-MIT.txt",
+    "license": "MIT",
+    "sha256": "cd78c54d65fd31903d70f31bf70673c41af6c3981eee2369105de39faaf02742",
+    "retrieved": "2026-11-03"
+  },
+  {
+    "name": "MADO-queue",
+    "source": "https://github.com/Memuro-Town/MADO-queue/blob/4a080438bc147ddf22e8514f6bae06ecbd8f49b5/LICENSE",
+    "file": "MADO-queue-MIT.txt",
+    "license": "MIT",
+    "sha256": "cd78c54d65fd31903d70f31bf70673c41af6c3981eee2369105de39faaf02742",
+    "retrieved": "2026-11-03"
+  },
+  {
+    "name": "bizudgothic",
+    "source": "https://github.com/google/fonts/blob/main/ofl/bizudgothic/OFL.txt",
+    "file": "bizudgothic-OFL.txt",
+    "license": "OFL-1.1",
+    "sha256": "e753d7155d53c747d037a445e584c8ecfca6dd79846db610417e282a736b28bc",
+    "retrieved": "2026-11-03"
+  },
+  {
+    "name": "bizudpgothic",
+    "source": "https://github.com/google/fonts/blob/main/ofl/bizudpgothic/OFL.txt",
+    "file": "bizudpgothic-OFL.txt",
+    "license": "OFL-1.1",
+    "sha256": "e753d7155d53c747d037a445e584c8ecfca6dd79846db610417e282a736b28bc",
+    "retrieved": "2026-11-03"
+  },
+  {
+    "name": "bizudpmincho",
+    "source": "https://github.com/google/fonts/blob/main/ofl/bizudpmincho/OFL.txt",
+    "file": "bizudpmincho-OFL.txt",
+    "license": "OFL-1.1",
+    "sha256": "ef0ed524b3bd012f37015e986809eed6f67905456ebfc1ebd7fcc2765282ee01",
+    "retrieved": "2026-11-03"
+  },
+  {
+    "name": "yomogi",
+    "source": "https://github.com/google/fonts/blob/main/ofl/yomogi/OFL.txt",
+    "file": "yomogi-OFL.txt",
+    "license": "OFL-1.1",
+    "sha256": "bc0330d5973ab1f200553f51b4cb4ef11b81187fdcd0249f7f83992726c02a48",
+    "retrieved": "2026-11-03"
+  },
+  {
+    "name": "LivePortrait",
+    "source": "https://github.com/KlingAIResearch/LivePortrait/blob/9b294b3d0536135442ea73cb01e6cb3ca7029dd3/LICENSE",
+    "file": "LivePortrait.txt",
+    "license": "MIT (InsightFace model exception retained verbatim)",
+    "sha256": "005c6f0519ce9029e95b3e877b9ec8eecd4beee40c41527b1352978d173650d5",
+    "retrieved": "2026-11-03"
+  }
+]

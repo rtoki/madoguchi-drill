@@ -1,0 +1,12 @@
+/web-dist/
+/build/
+/.wrangler/
+/node_modules/
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Production records belong in the repository's ignored .local/ directory.
+/local-notes/
+/motion-preview/
+/images/PROMPT*

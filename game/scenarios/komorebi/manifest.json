@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "id": "komorebi",
+  "revision": "paper-family-v1",
+  "layoutRevision": "three-chapters-v1",
+  "name": "こもれび町の窓口",
+  "creator": "rtoki",
+  "license": "CC-BY-4.0",
+  "saveKey": "madoguchi.family-longform.v1",
+  "bestKey": "madoguchiDrillBest2",
+  "story": "story.json",
+  "content": "content.json",
+  "assets": "assets.json",
+  "styles": "styles.json",
+  "music": "music.json",
+  "motion": "motion.json",
+  "sound": "sound.json",
+  "legacy": "legacy-pages.json",
+  "extensions": [
+    "migrations.js",
+    "counter-extension.js",
+    "paper-family-saves.js"
+  ],
+  "people": [
+    {
+      "id": "rookie",
+      "name": "あなた",
+      "role": "新人職員",
+      "tag": "窓口の一日",
+      "scene": "scene-paperwork"
+    }
+  ],
+  "entryCaption": "午前九時、窓口の一日を始める",
+  "review": {
+    "after": "phone",
+    "deduction": "deduction",
+    "notice": "「夫」と聞いた朝へ。会話を読み返してから、三つの推理を組み立てる。",
+    "solvedPrompt": "見聞きしたことを、警察へ伝えよう。",
+    "continueLabel": "警察へ説明する",
+    "label": "朝の会話を振り返る"
+  },
+  "ending": {
+    "scene": "scene-family-empty-consultation",
+    "cast": [
+      {
+        "name": "真鍋 恵子",
+        "roman": "KEIKO MANABE",
+        "scene": "mentor-scene"
+      },
+      {
+        "name": "吉田 拓海",
+        "roman": "YOSHIDA TAKUMI",
+        "scene": "bg",
+        "portrait": "c11"
+      },
+      {
+        "name": "黒瀬 修一",
+        "roman": "SHUICHI KUROSE",
+        "scene": "scene-family-kurose-counter"
+      },
+      {
+        "name": "結衣",
+        "role": "娘を名乗る女性",
+        "roman": "YUI / THE VISITOR",
+        "scene": "scene-family-daughter-waiting"
+      }
+    ]
+  },
+  "allowLegacySave": true,
+  "version": "1.0.0",
+  "scriptVersion": 1,
+  "requiresEngine": {
+    "minVersion": "1.0.0",
+    "maxVersionExclusive": "2.0.0"
+  },
+  "moments": "moments.json"
+}

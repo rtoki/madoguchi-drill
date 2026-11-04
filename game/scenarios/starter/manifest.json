@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "starter",
+  "revision": "starter-v1",
+  "layoutRevision": "starter-v1",
+  "name": "閉庁前の忘れ物",
+  "creator": "rtoki",
+  "license": "CC-BY-4.0",
+  "story": "story.json",
+  "content": "../komorebi/content.json",
+  "assets": "assets.json",
+  "styles": "../komorebi/styles.json",
+  "music": "../komorebi/music.json",
+  "motion": "../komorebi/motion.json",
+  "sound": "sound.json",
+  "people": [
+    {
+      "id": "rookie",
+      "name": "あなた",
+      "role": "新人職員",
+      "tag": "窓口の一日",
+      "scene": "scene-paperwork"
+    }
+  ],
+  "entryCaption": "短編サンプル · 閉庁前のカウンター",
+  "review": {
+    "after": "inspection",
+    "deduction": "conclusion",
+    "notice": "今日の出来事を振り返ってみよう。",
+    "solvedPrompt": "受付番号を確認してから、持ち主へ返そう。",
+    "continueLabel": "窓口へ戻る"
+  },
+  "ending": {
+    "scene": "scene-lobby",
+    "cast": [
+      {
+        "name": "窓口の職員",
+        "roman": "THE CLERK",
+        "role": "あなた",
+        "scene": "scene-paperwork"
+      }
+    ]
+  },
+  "authoring": {
+    "metadata": "metadata.json",
+    "manuscript": "manuscript.md"
+  },
+  "storyHelp": "<h4>ストーリーモード</h4><p>閉庁前の忘れ物をめぐる短編サンプルです。確認する応対を選び、手掛かりを読んで、一つの推理を確かめます。進行はこの短編専用の保存先へ記録します。</p>",
+  "modeHelp": "<h4>2つのモード</h4><p>通常モードは共通の窓口教材を使用します。ストーリーモードは短編サンプルです。</p>",
+  "version": "1.0.0",
+  "scriptVersion": 1,
+  "requiresEngine": {
+    "minVersion": "1.0.0",
+    "maxVersionExclusive": "2.0.0"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "paper-effect-discovered": {
+    "kind": "compare",
+    "label": "控えと照会画面",
+    "paperLabel": "交付前の控え",
+    "screenLabel": "現在の照会",
+    "rows": [
+      {
+        "label": "氏名",
+        "paper": "覆われている",
+        "screen": "覆われている",
+        "masked": true
+      },
+      {
+        "label": "世帯主との続柄",
+        "paper": "子",
+        "screen": "夫"
+      },
+      {
+        "label": "住所",
+        "paper": "覆われている",
+        "screen": "覆われている",
+        "masked": true
+      }
+    ]
+  },
+  "paper-two-daughters": {
+    "kind": "photo",
+    "label": "真鍋の携帯",
+    "scene": "scene-family-photo-original",
+    "description": "川沿いで、真鍋と眼鏡をかけた若い女性が並んで笑っている。"
+  },
+  "wrong_issue-001": {
+    "kind": "photo",
+    "label": "翌朝・真鍋の携帯",
+    "scene": "scene-family-photo-changed",
+    "description": "川沿いで、真鍋と昨日娘を名乗った女性が並んで笑っている。"
+  },
+  "paper-empty-place": {
+    "kind": "recall",
+    "label": "今日の記憶",
+    "frames": [
+      {
+        "page": "r1-003",
+        "quote": "落ちましたよ",
+        "duration": 4200
+      },
+      {
+        "page": "r1-009",
+        "quote": "ああ、あの方。真鍋さんのご主人ですよ",
+        "duration": 4800
+      },
+      {
+        "page": "paper-woman-chair",
+        "quote": "忙しいのに、待ってくれるんだなと思って",
+        "duration": 4800
+      }
+    ]
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "blocks": [
+    {
+      "id": "sample",
+      "act": 1,
+      "title": "閉庁前の忘れ物",
+      "nodes": [
+        "arrival",
+        "inspection",
+        "conclusion",
+        "departure"
+      ],
+      "intro": "カウンターに、一冊の手帳が残っている。",
+      "person": "rookie"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "arrival",
+      "title": "残された手帳",
+      "time": "16:50",
+      "endTime": "16:50",
+      "person": "rookie",
+      "needs": [],
+      "block": "sample",
+      "act": 1,
+      "pages": [
+        {
+          "scene": "scene-paperwork",
+          "text": "カウンターの端に、青い手帳が残っていた。\n入口へ向かう人が、二人。どちらの持ち物だろう。",
+          "key": "arrival-paper",
+          "time": "16:50",
+          "decision": "response"
+        },
+        {
+          "scene": "scene-paperwork",
+          "text": "「お忘れ物はありませんか」\n一人が足を止め、上着のポケットを確かめた。",
+          "when": {
+            "response": "ask"
+          },
+          "key": "arrival-ask",
+          "time": "16:51"
+        },
+        {
+          "scene": "scene-paperwork",
+          "text": "自分は、手帳を開かずに手元へ引き寄せた。",
+          "key": "arrival-safe",
+          "time": "16:51"
+        }
+      ]
+    },
+    {
+      "id": "inspection",
+      "title": "番号札",
+      "time": "16:52",
+      "endTime": "16:52",
+      "person": "rookie",
+      "needs": [
+        "arrival"
+      ],
+      "block": "sample",
+      "act": 1,
+      "pages": [
+        {
+          "scene": "scene-paperwork",
+          "text": "手帳の下に、42番の番号札があった。\nさっき、この席で呼んだ番号だ。",
+          "key": "inspection-number",
+          "time": "16:52",
+          "clues": [
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conclusion",
+      "title": "持ち主を確かめる",
+      "time": "16:54",
+      "endTime": "16:54",
+      "person": "rookie",
+      "needs": [
+        "inspection"
+      ],
+      "block": "sample",
+      "act": 1,
+      "puzzle": true,
+      "pages": [
+        {
+          "scene": "scene-paperwork",
+          "text": "返す前に、確かめることを整理する。",
+          "key": "conclusion-question",
+          "time": "16:54"
+        }
+      ]
+    },
+    {
+      "id": "departure",
+      "title": "閉庁の時刻",
+      "time": "17:00",
+      "endTime": "17:00",
+      "person": "rookie",
+      "needs": [
+        "conclusion"
+      ],
+      "block": "sample",
+      "act": 1,
+      "pages": [
+        {
+          "scene": "scene-lobby",
+          "text": "「青い手帳を、忘れませんでしたか」\n男性はうなずいて、表紙につけた小さな傷のことを話した。\n受付番号も確かめてから、手帳を返した。",
+          "key": "departure-return",
+          "time": "16:57"
+        },
+        {
+          "scene": "scene-lobby",
+          "text": "男性は手帳を上着に入れ、今度は一度ポケットを押さえてから帰っていった。\n閉庁の時刻になった。",
+          "key": "departure-close",
+          "time": "17:00",
+          "beat": "reveal"
+        }
+      ]
+    }
+  ],
+  "decisions": {
+    "response": {
+      "prompt": "持ち主を確かめるには？",
+      "options": [
+        {
+          "id": "ask",
+          "label": "受付番号を確かめる"
+        },
+        {
+          "id": "guess",
+          "label": "近くの人に渡す",
+          "ending": "wrong_owner"
+        }
+      ]
+    }
+  },
+  "clues": {
+    "number": {
+      "title": "手帳の下の番号札",
+      "who": "カウンター",
+      "text": "手帳の下に、42番の番号札が残されていた。",
+      "node": "inspection",
+      "page": 0,
+      "pageKey": "inspection-number"
+    }
+  },
+  "puzzles": {
+    "owner": {
+      "title": "手帳を返す前に、何を確かめる？",
+      "shortTitle": "持ち主の確認",
+      "count": 1,
+      "clues": [
+        "number"
+      ],
+      "correct": [
+        "number"
+      ],
+      "answer": "number_check",
+      "options": [
+        {
+          "id": "number_check",
+          "text": "受付番号と忘れ物の特徴を聞く。"
+        },
+        {
+          "id": "nearby",
+          "text": "近くにいる人へ、そのまま渡す。"
+        }
+      ],
+      "hint": "手帳と一緒に残っていたものを思い出そう。",
+      "feedback": "近くにいることだけでは、持ち主とは分からない。",
+      "evidenceFeedback": "残された番号札が確認の手掛かりになる。",
+      "solved": "42番の番号札が、持ち主を確かめる手掛かりになる。"
+    }
+  },
+  "bad_endings": {
+    "wrong_owner": {
+      "title": "確認する前に",
+      "label": "忘れ物の受け渡し",
+      "node": "arrival",
+      "decision": "response",
+      "retry": "受け渡しの前からやり直す",
+      "pages": [
+        {
+          "key": "wrong-owner-end",
+          "scene": "scene-paperwork",
+          "text": "「これ、私のではありません」\n渡しかけた手帳を受け取り直した。先に、何を忘れたのか聞けばよかった。",
+          "time": "16:51"
+        }
+      ]
+    }
+  },
+  "schema_version": 3,
+  "stats": {
+    "total_chars": 310,
+    "total_pages": 8,
+    "choices": 1,
+    "routes": 1,
+    "early_endings": 1,
+    "total_paths": 2,
+    "core_clues": 1,
+    "all_clues": 1,
+    "path_chars_min": 261,
+    "path_chars_max": 261,
+    "path_pages_min": 7,
+    "path_pages_max": 7,
+    "max_page_chars": 65,
+    "bad_ending_chars": 49
+  }
+}

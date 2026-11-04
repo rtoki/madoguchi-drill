@@ -1,0 +1,153 @@
+{
+  "r0": {
+    "start": "08:55",
+    "end": "09:04",
+    "anchors": {
+      "r0-006": "08:59",
+      "r0-008": "09:00"
+    }
+  },
+  "r2": {
+    "start": "09:05",
+    "end": "09:30"
+  },
+  "r1": {
+    "start": "09:30",
+    "end": "09:45"
+  },
+  "memo": {
+    "start": "09:48",
+    "end": "10:35",
+    "anchors": {
+      "memo-002": "09:50",
+      "memo-008": "09:54",
+      "memo-019": "10:02",
+      "memo-021": "10:10",
+      "memo-030": "10:20",
+      "memo-033": "10:25"
+    }
+  },
+  "stairs": {
+    "start": "10:42",
+    "end": "11:45",
+    "anchors": {
+      "stairs-001": "10:43",
+      "stairs-001--1": "10:43",
+      "stairs-008": "10:46",
+      "stairs-009": "10:48",
+      "stairs-017": "10:50",
+      "stairs-031": "10:55",
+      "stairs-033": "11:20",
+      "stairs-035": "11:35"
+    }
+  },
+  "noon": {
+    "start": "12:05",
+    "end": "12:55",
+    "anchors": {
+      "noon-002": "12:07",
+      "noon-002--1": "12:07",
+      "noon-003": "12:07",
+      "noon-004": "12:07",
+      "noon-004a": "12:07",
+      "noon-004b": "12:07",
+      "noon-004b1": "12:08",
+      "noon-004c": "12:08",
+      "noon-004d": "12:08",
+      "noon-006": "12:22",
+      "noon-009": "12:35",
+      "noon-010": "12:38",
+      "noon-011": "12:42",
+      "noon-012": "12:46",
+      "noon-015": "12:50"
+    }
+  },
+  "daughter": {
+    "start": "16:10",
+    "end": "16:42",
+    "anchors": {
+      "daughter-003": "16:13",
+      "daughter-004": "16:15",
+      "daughter-005": "16:30",
+      "daughter-006": "16:32",
+      "daughter-011": "16:38",
+      "daughter-012": "16:39"
+    }
+  },
+  "instructions": {
+    "start": "16:43",
+    "end": "16:58",
+    "anchors": {
+      "instructions-014": "16:48",
+      "instructions-015": "16:49",
+      "instructions-030": "16:49",
+      "instructions-036": "16:50",
+      "instructions-045": "16:52",
+      "instructions-049": "16:54",
+      "instructions-050": "16:56"
+    }
+  },
+  "phone": {
+    "start": "17:02",
+    "end": "17:08",
+    "anchors": {
+      "phone-004": "17:02",
+      "phone-005": "17:03",
+      "phone-007": "17:05",
+      "phone-007--1": "17:05",
+      "phone-007--2": "17:05",
+      "phone-008": "17:05",
+      "phone-008--1": "17:05",
+      "phone-013": "17:08"
+    }
+  },
+  "deduction": {
+    "start": "17:08",
+    "end": "17:10"
+  },
+  "report": {
+    "start": "17:10",
+    "end": "17:20"
+  },
+  "safety": {
+    "start": "17:22",
+    "end": "17:44",
+    "anchors": {
+      "safety-001--1": "17:22",
+      "safety-001--2": "17:22",
+      "safety-019": "17:29",
+      "paper-manabe-return": "17:34"
+    }
+  },
+  "next_morning": {
+    "start": "17:45",
+    "end": "17:48",
+    "anchors": {
+      "next_morning-015": "17:48"
+    }
+  },
+  "outside": {
+    "start": "17:48",
+    "end": "18:05",
+    "anchors": {
+      "outside-000--1": "17:48",
+      "outside-000--2": "17:48",
+      "paper-recording-return": "17:55",
+      "paper-closing-light": "18:05"
+    }
+  },
+  "envelope_open": {
+    "start": "09:51",
+    "end": "10:15",
+    "anchors": {
+      "envelope_open-003": "10:15"
+    }
+  },
+  "wrong_issue": {
+    "start": "16:30",
+    "end": "17:28",
+    "anchors": {
+      "wrong_issue-001": "17:22"
+    }
+  }
+}

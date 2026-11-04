@@ -1,0 +1,214 @@
+{
+  "scenes": [
+    "bg",
+    "c1",
+    "c10",
+    "c11",
+    "c12",
+    "c13",
+    "c14",
+    "c2",
+    "c3",
+    "c4",
+    "c5",
+    "c6",
+    "c7",
+    "c8",
+    "c9",
+    "care-insurance-jp",
+    "document-props",
+    "health-insurance-jp",
+    "license-jp",
+    "mentor-scene",
+    "mentor-smile",
+    "mynumber-jp",
+    "paper-texture",
+    "scene-bag-home",
+    "scene-certificate-handoff",
+    "scene-file-wait",
+    "scene-first-step",
+    "scene-guidance",
+    "scene-lobby",
+    "scene-mystery-clipped-papers",
+    "scene-mystery-clock-0932",
+    "scene-mystery-facts-notebook",
+    "scene-mystery-incoming-call",
+    "scene-mystery-kept-file",
+    "scene-mystery-north-exit",
+    "scene-mystery-print-copy",
+    "scene-mystery-returned-ticket",
+    "scene-mystery-separated-papers",
+    "scene-mystery-yoshida-departure",
+    "scene-paperwork",
+    "scene-timetable",
+    "scene-waiting-ticket",
+    "scene-worn-notebook",
+    "seal-jp",
+    "senpai",
+    "staff-pc",
+    "title-scene",
+    "scene-family-waiting",
+    "scene-family-stairwell",
+    "scene-family-daughter",
+    "scene-family-empty-desk",
+    "scene-family-discovery",
+    "scene-family-instructions",
+    "scene-family-evidence",
+    "scene-family-police-call",
+    "scene-family-final-notebook",
+    "scene-family-kurose-counter",
+    "scene-family-sealed-envelope",
+    "scene-family-letters",
+    "scene-family-outside-call",
+    "scene-family-daughter-document",
+    "scene-family-daughter-talk",
+    "scene-family-daughter-waiting",
+    "scene-family-kurose-card",
+    "scene-family-yoshida-wait",
+    "scene-family-manabe-envelope",
+    "scene-family-consultation-door",
+    "scene-family-daughter-phone",
+    "scene-family-police-arrival",
+    "scene-family-empty-consultation",
+    "scene-family-morning-counter",
+    "scene-family-yoshida-counter",
+    "scene-family-kurose-lobby",
+    "scene-family-manabe-stairs",
+    "scene-family-yoshida-stairs",
+    "scene-family-rescue-aftermath",
+    "scene-family-evening-counter",
+    "scene-family-phone-receiver"
+  ],
+  "blocks": [
+    {
+      "id": "sample",
+      "act": 1,
+      "title": "閉庁前の忘れ物",
+      "nodes": [
+        "arrival",
+        "inspection",
+        "conclusion",
+        "departure"
+      ],
+      "intro": "カウンターに、一冊の手帳が残っている。",
+      "person": "rookie"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "arrival",
+      "title": "残された手帳",
+      "time": "16:50",
+      "endTime": "16:51",
+      "person": "rookie",
+      "needs": [],
+      "block": "sample",
+      "act": 1
+    },
+    {
+      "id": "inspection",
+      "title": "番号札",
+      "time": "16:52",
+      "endTime": "16:52",
+      "person": "rookie",
+      "needs": [
+        "arrival"
+      ],
+      "block": "sample",
+      "act": 1
+    },
+    {
+      "id": "conclusion",
+      "title": "持ち主を確かめる",
+      "time": "16:54",
+      "endTime": "16:54",
+      "person": "rookie",
+      "needs": [
+        "inspection"
+      ],
+      "block": "sample",
+      "act": 1,
+      "puzzle": true
+    },
+    {
+      "id": "departure",
+      "title": "閉庁の時刻",
+      "time": "16:57",
+      "endTime": "17:00",
+      "person": "rookie",
+      "needs": [
+        "conclusion"
+      ],
+      "block": "sample",
+      "act": 1
+    }
+  ],
+  "decisions": {
+    "response": {
+      "prompt": "持ち主を確かめるには？",
+      "options": [
+        {
+          "id": "ask",
+          "label": "受付番号を確かめる"
+        },
+        {
+          "id": "guess",
+          "label": "近くの人に渡す",
+          "ending": "wrong_owner"
+        }
+      ]
+    }
+  },
+  "clues": {
+    "number": {
+      "title": "手帳の下の番号札",
+      "who": "カウンター",
+      "text": "手帳の下に、42番の番号札が残されていた。"
+    }
+  },
+  "puzzles": {
+    "owner": {
+      "title": "手帳を返す前に、何を確かめる？",
+      "shortTitle": "持ち主の確認",
+      "count": 1,
+      "clues": [
+        "number"
+      ],
+      "correct": [
+        "number"
+      ],
+      "answer": "number_check",
+      "options": [
+        {
+          "id": "number_check",
+          "text": "受付番号と忘れ物の特徴を聞く。"
+        },
+        {
+          "id": "nearby",
+          "text": "近くにいる人へ、そのまま渡す。"
+        }
+      ],
+      "hint": "手帳と一緒に残っていたものを思い出そう。",
+      "feedback": "近くにいることだけでは、持ち主とは分からない。",
+      "evidenceFeedback": "残された番号札が確認の手掛かりになる。",
+      "solved": "42番の番号札が、持ち主を確かめる手掛かりになる。"
+    }
+  },
+  "bad_endings": {
+    "wrong_owner": {
+      "title": "確認する前に",
+      "label": "忘れ物の受け渡し",
+      "node": "arrival",
+      "decision": "response",
+      "retry": "受け渡しの前からやり直す",
+      "pages": [
+        {
+          "key": "wrong-owner-end",
+          "scene": "scene-paperwork",
+          "text": "「これ、私のではありません」\n渡しかけた手帳を受け取り直した。先に、何を忘れたのか聞けばよかった。",
+          "time": "16:51"
+        }
+      ]
+    }
+  }
+}

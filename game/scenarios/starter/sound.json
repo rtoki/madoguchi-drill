@@ -1,0 +1,11 @@
+{
+  "chapters": {
+    "sample": "story-return"
+  },
+  "credits": "story-ending",
+  "silence": [],
+  "effects": {
+    "arrival-paper": "paper",
+    "departure-return": "card"
+  }
+}

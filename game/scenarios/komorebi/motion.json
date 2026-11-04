@@ -1,0 +1,298 @@
+{
+  "mentor-scene": {
+    "mobile": "250c19a1e03cce6a",
+    "desktop": "8310ac267858de92"
+  },
+  "mentor-smile": {
+    "mobile": "7b0db8e288acbba6",
+    "desktop": "ad888860e3781b6e"
+  },
+  "c1-0": {
+    "mobile": "8f95b4f53c41fc79",
+    "desktop": "e509b64d24810fa8"
+  },
+  "c1-1": {
+    "mobile": "81391876e7438e53",
+    "desktop": "3ef7e0a30f87ccba"
+  },
+  "c1-2": {
+    "mobile": "94f74ab1da684aef",
+    "desktop": "1db395e91c14cec2"
+  },
+  "c1-3": {
+    "mobile": "27f5c01e6c84d560",
+    "desktop": "1e82ac5435925f33"
+  },
+  "c2-0": {
+    "mobile": "91ba73d6d2c32267",
+    "desktop": "b6da913884139353"
+  },
+  "c2-1": {
+    "mobile": "79ad84971fd73edd",
+    "desktop": "c3ae11e85628c02d"
+  },
+  "c2-2": {
+    "mobile": "4085b3238c9956e8",
+    "desktop": "4d3ff2287f9a7350"
+  },
+  "c2-3": {
+    "mobile": "c2f5e221c6540618",
+    "desktop": "559ce48e6bac6c89"
+  },
+  "c3-0": {
+    "mobile": "ab52538a032508e0",
+    "desktop": "7656ab381b8b1a70"
+  },
+  "c3-1": {
+    "mobile": "53213024da32acd1",
+    "desktop": "198dfdc7785a689f"
+  },
+  "c3-2": {
+    "mobile": "57e70c547a596663",
+    "desktop": "4100f35deadf853f"
+  },
+  "c3-3": {
+    "mobile": "14619f1b2de61179",
+    "desktop": "d12212dcfadb211d"
+  },
+  "c4-0": {
+    "mobile": "971198a2ee3c6f8e",
+    "desktop": "fb737d2a1101b7b0"
+  },
+  "c4-1": {
+    "mobile": "1e03550c72c88087",
+    "desktop": "0feada3d334ab26d"
+  },
+  "c4-2": {
+    "mobile": "c6db62198de96e10",
+    "desktop": "94babce4fba88af8"
+  },
+  "c4-3": {
+    "mobile": "d7877e488d52682e",
+    "desktop": "791efee30e0af882"
+  },
+  "c5-0": {
+    "mobile": "81f0495f6595ca41",
+    "desktop": "b1cb1b442c9b1c66"
+  },
+  "c5-1": {
+    "mobile": "3b0afdbdb6bc588f",
+    "desktop": "7369db7ccffe6c73"
+  },
+  "c5-2": {
+    "mobile": "b965b11b38c3e582",
+    "desktop": "8b57d54f8cc020f4"
+  },
+  "c5-3": {
+    "mobile": "e6cc4788b4a1111f",
+    "desktop": "8927da3f1185fb02"
+  },
+  "c6-0": {
+    "mobile": "56505e58b840fc78",
+    "desktop": "bb51036c6433519b"
+  },
+  "c6-1": {
+    "mobile": "9ed57c7c0f413c42",
+    "desktop": "862d66755c7a9f41"
+  },
+  "c6-2": {
+    "mobile": "706e77e68b83dfce",
+    "desktop": "631c8540ccd17e44"
+  },
+  "c6-3": {
+    "mobile": "e3ccd2ed89652af2",
+    "desktop": "7567a6ba73933e63"
+  },
+  "c7-0": {
+    "mobile": "50fd479945e0b087",
+    "desktop": "d1a90773d7447f0b"
+  },
+  "c7-1": {
+    "mobile": "51b64204c2eda7ce",
+    "desktop": "d94e675e61b2cd37"
+  },
+  "c7-2": {
+    "mobile": "dc644fe9973f313c",
+    "desktop": "11ec7506a0b811bf"
+  },
+  "c7-3": {
+    "mobile": "496588e6d297b7a1",
+    "desktop": "296936c937bda408"
+  },
+  "c8-0": {
+    "mobile": "c8269212e387a790",
+    "desktop": "ed3db7e252afc801"
+  },
+  "c8-1": {
+    "mobile": "37b14c24097d6b06",
+    "desktop": "449cb4a5e490f7d6"
+  },
+  "c8-2": {
+    "mobile": "224a525b6aa7299c",
+    "desktop": "682b54e90b304b82"
+  },
+  "c8-3": {
+    "mobile": "8f302de9db75f277",
+    "desktop": "42d0c4bd585cbde4"
+  },
+  "c9-0": {
+    "mobile": "3cb87d5dbc0814d5",
+    "desktop": "4bb4cd0ff2068ec7"
+  },
+  "c9-1": {
+    "mobile": "3a46fac3d7d74a8f",
+    "desktop": "b8004d80af0c0dd0"
+  },
+  "c9-2": {
+    "mobile": "32c28fadf06dbaa0",
+    "desktop": "05067564939d5f2f"
+  },
+  "c9-3": {
+    "mobile": "9d5f19f0abbfd6eb",
+    "desktop": "b8c1bb8bf04884cd"
+  },
+  "c10-0": {
+    "mobile": "7b14ab8c702cff7d",
+    "desktop": "11c20b9aba669c4c"
+  },
+  "c10-1": {
+    "mobile": "2d322e965fe8a85d",
+    "desktop": "1785140a19fc5280"
+  },
+  "c10-2": {
+    "mobile": "e9f3ceeae5a66629",
+    "desktop": "9ac3e99ee3b4f04f"
+  },
+  "c10-3": {
+    "mobile": "bf643db8973312da",
+    "desktop": "3401f8f235ef30b5"
+  },
+  "c12-0": {
+    "mobile": "e25ea0a2b02a569b",
+    "desktop": "78b85e55296abb91"
+  },
+  "c12-1": {
+    "mobile": "fbf2833ca4c58e99",
+    "desktop": "1830157e8f5647f0"
+  },
+  "c12-2": {
+    "mobile": "55d3b86ba6438f63",
+    "desktop": "ce7c54968a7b62a0"
+  },
+  "c12-3": {
+    "mobile": "a8962f6f0b4ecb44",
+    "desktop": "d83be771830de592"
+  },
+  "c13-0": {
+    "mobile": "49c775c50777b611",
+    "desktop": "28300ff1f2323eeb"
+  },
+  "c13-1": {
+    "mobile": "0b83cb1ba6be93cc",
+    "desktop": "3bf1aa81f555a7fb"
+  },
+  "c13-2": {
+    "mobile": "be844ee237761c6f",
+    "desktop": "8868b1a3063f3e42"
+  },
+  "c13-3": {
+    "mobile": "4838dd1b710e2de2",
+    "desktop": "4115c4a3990c247f"
+  },
+  "c14-0": {
+    "mobile": "3663c326fd30ce89",
+    "desktop": "dec11e3e179080b8"
+  },
+  "c14-1": {
+    "mobile": "48d815e0da224445",
+    "desktop": "b5e60739f7256932"
+  },
+  "c14-2": {
+    "mobile": "e119d95bb336a132",
+    "desktop": "dbbb281c6e8f9c76"
+  },
+  "c14-3": {
+    "mobile": "597f1a8412245006",
+    "desktop": "58404ba3515e819d"
+  },
+  "c11-0": {
+    "mobile": "8c6a05680698dd59",
+    "desktop": "9fef4149f698006d"
+  },
+  "c11-1": {
+    "mobile": "1e90172967ce4360",
+    "desktop": "6f34437e92707ad7"
+  },
+  "c11-2": {
+    "mobile": "37b469adf4e05f8e",
+    "desktop": "d6a72756c2692e4f"
+  },
+  "c11-3": {
+    "mobile": "963f6c475e043372",
+    "desktop": "e86f9917433bc5d8"
+  },
+  "scene-family-kurose-counter": {
+    "mobile": "61d1c075a99452af",
+    "desktop": "a7ea4f15f943eaa9"
+  },
+  "scene-family-daughter": {
+    "mobile": "60076fbc7be1ce85",
+    "desktop": "799ed31bf4e02523"
+  },
+  "scene-family-daughter-document": {
+    "mobile": "96463d2eb5dd66ec",
+    "desktop": "21aa0d037565c21b"
+  },
+  "scene-family-daughter-talk": {
+    "mobile": "3236cfd410c75919",
+    "desktop": "09830c2d346f3bc9"
+  },
+  "scene-family-daughter-waiting": {
+    "mobile": "92be6f3e382b9d7b",
+    "desktop": "80b1675a8a71d3a7"
+  },
+  "scene-family-kurose-card": {
+    "mobile": "382a5b8287bea6de",
+    "desktop": "e997ecdf31035097"
+  },
+  "scene-family-yoshida-wait": {
+    "mobile": "3484e110a9d5acf1",
+    "desktop": "21440ffad70d27f8"
+  },
+  "scene-family-manabe-envelope": {
+    "mobile": "e0167e09404e686b",
+    "desktop": "52f79ccc76e5e5ad"
+  },
+  "scene-family-yoshida-counter": {
+    "mobile": "abd22381bd061551",
+    "desktop": "70ca8407b5fd7148"
+  },
+  "scene-family-kurose-lobby": {
+    "mobile": "67ea4847aae91d61",
+    "desktop": "9654f4e440a0368f"
+  },
+  "scene-family-manabe-stairs": {
+    "mobile": "59ed933196b992a3",
+    "desktop": "a51f9b8a47253061"
+  },
+  "scene-family-yoshida-stairs": {
+    "mobile": "cd71b827de3b79ab",
+    "desktop": "7cae99cfb502acc4"
+  },
+  "scene-family-daughter-phone": {
+    "mobile": "93fe712cc82c955b",
+    "desktop": "c286da8f655993b7"
+  },
+  "scene-family-waiting": {
+    "mobile": "ac49371993713a2e",
+    "desktop": "207468c6c4f6f7b2"
+  },
+  "scene-family-stairwell": {
+    "mobile": "63bbc736f604f3e0",
+    "desktop": "de626f47018aeacc"
+  },
+  "scene-family-police-call": {
+    "mobile": "93d66daa3de1c070",
+    "desktop": "ee17032883d37d1f"
+  }
+}

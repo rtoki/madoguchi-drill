@@ -1,0 +1,56 @@
+{
+  "counter": {
+    "title": "1 (jazz)",
+    "url": "https://freemusicarchive.org/music/holiznacc0/busted-guitar-jazz/1-jazz/",
+    "usage": "タイトル・通常モード",
+    "artistName": "HoliznaCC0",
+    "license": "CC0-1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "asset": "226713b2a022b3e3"
+  },
+  "story-ending": {
+    "title": "Almost New",
+    "url": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1800008",
+    "usage": "ストーリーFIN・スタッフロール",
+    "artistName": "Kevin MacLeod",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "asset": "02b9d3a36e4052d5"
+  },
+  "story-return": {
+    "title": "Cool Vibes",
+    "url": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100863",
+    "usage": "ストーリー終盤：帰還から閉庁前",
+    "artistName": "Kevin MacLeod",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "asset": "4716a168fbd288ad"
+  },
+  "story-morning": {
+    "title": "Airport Lounge",
+    "url": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100806",
+    "usage": "ストーリー第1章：朝の窓口",
+    "artistName": "Kevin MacLeod",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "asset": "a21f61ee596a9756"
+  },
+  "story-investigation": {
+    "title": "Covert Affair",
+    "url": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100795",
+    "usage": "ストーリー第3章：確認と推理",
+    "artistName": "Kevin MacLeod",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "asset": "0dd5c37dc247b6ed"
+  },
+  "story-afternoon": {
+    "title": "Night on the Docks - Piano",
+    "url": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100135",
+    "usage": "ストーリー第2章：事件後の午後",
+    "artistName": "Kevin MacLeod",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "asset": "8e8bb25b9d72c0b7"
+  }
+}

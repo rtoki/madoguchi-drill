@@ -1,0 +1,51 @@
+{
+  "chapters": {
+    "ch1": "story-morning",
+    "ch2": "story-afternoon",
+    "ch3": "story-investigation"
+  },
+  "credits": "story-ending",
+  "silence": [],
+  "effects": {
+    "r0-000": "chair",
+    "r0-006": "paper",
+    "r0-008": "ticket",
+    "r0-010": "card",
+    "r1-000": "coins",
+    "r1-003": "paper",
+    "r1-007": "card",
+    "memo-000": "envelope",
+    "memo-017": "steps",
+    "memo-021": "paper",
+    "stairs-000": "steps",
+    "stairs-033": "water",
+    "stairs-036": {
+      "kind": "mobile",
+      "after": "真鍋さんの携帯が鳴った。"
+    },
+    "noon-000": "chair",
+    "noon-002": "water",
+    "noon-006": "arrival",
+    "daughter-000": "door",
+    "daughter-004": "card",
+    "daughter-011": "receiver",
+    "instructions-000": "card",
+    "instructions-049": "receiver",
+    "phone-004": "telephone",
+    "safety-000": "receiver",
+    "next_morning-015": "door",
+    "paper-copy-comparison": "paper",
+    "paper-return-price": "paper",
+    "paper-manabe-return": "door",
+    "paper-counter-closed": "paper",
+    "paper-closing-light": {
+      "kind": "mobile",
+      "after": "真鍋さんの携帯が鳴る。"
+    }
+  },
+  "scenes": {
+    "safety": "story-return",
+    "next_morning": "story-return",
+    "outside": "story-return"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "captures": [
+    {
+      "file": "title.jpg",
+      "caption": "タイトル",
+      "creator": "rtoki",
+      "source": "https://madoguchi-drill.pages.dev/",
+      "captured": "2026-11-04",
+      "width": 1280,
+      "height": 720,
+      "mime": "image/jpeg",
+      "sha256": "90795dffeaa719afed1204bbd3f6cc14ca203f541e8497daba58051eb3034020",
+      "rights": "Game screenshots; underlying code, story, artwork and third-party content retain their respective licenses. See ../../LICENSING.md."
+    },
+    {
+      "file": "counter-form.jpg",
+      "caption": "通常モード・職員用PC",
+      "creator": "rtoki",
+      "source": "https://madoguchi-drill.pages.dev/",
+      "captured": "2026-11-04",
+      "width": 1280,
+      "height": 720,
+      "mime": "image/jpeg",
+      "sha256": "7960a53ced945130c5dd56bf71ead8f0ccd95fc845f92999b22ac3d377f7c315",
+      "rights": "Game screenshots; underlying code, story, artwork and third-party content retain their respective licenses. See ../../LICENSING.md."
+    },
+    {
+      "file": "story.jpg",
+      "caption": "ストーリーモード・冒頭の会話",
+      "creator": "rtoki",
+      "source": "https://madoguchi-drill.pages.dev/",
+      "captured": "2026-11-04",
+      "width": 1280,
+      "height": 720,
+      "mime": "image/jpeg",
+      "sha256": "e64e54247dbc1601b09fdf7fd821a01c5972565f48c994cd1bc65d09a76668da",
+      "rights": "Game screenshots; underlying code, story, artwork and third-party content retain their respective licenses. See ../../LICENSING.md."
+    }
+  ]
+}

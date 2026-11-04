@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "effective": "2026-11-03",
+  "creator": "rtoki",
+  "personal_notice": "本作は tocky8bit が個人として開発・公開したゲームです。作者が所属する組織とは関係なく、その見解や方針を示すものではありません。",
+  "project": "証明書窓口ドリル",
+  "project_url": "https://madoguchi-drill.pages.dev/",
+  "scopes": [
+    {
+      "title": "プログラム",
+      "license": "MIT",
+      "text": "独自のゲームコード、CSS、制作・検証スクリプトと、コードで描画したホーム画面用アイコンはMITライセンスです。著作権表示とライセンス本文を保持して、改変・再配布・商用利用できます。"
+    },
+    {
+      "title": "独自のシナリオ・教材",
+      "license": "CC BY 4.0",
+      "text": "独自のシナリオ、設問、解説、架空の人物・申請データはCC BY 4.0です。作者・出典・ライセンスを表示し、改変時は変更を明記してください。商用利用も可能です。MADOなど第三者由来の部分には元の条件を適用します。"
+    },
+    {
+      "title": "独自の画像・動画",
+      "license": "CC BY 4.0（保有する権利の範囲）",
+      "text": "本作の写真風画像はAI生成、人物動画はその画像から制作したものです。当方が保有する著作権等の範囲でCC BY 4.0として提供します。著作権の成立や独占性を保証するものではなく、保護されない部分に条件を課すものでもありません。生成モデル自体の利用許諾は含みません。"
+    },
+    {
+      "title": "音楽・フォント・制作ツール",
+      "license": "素材・ツールごとの原条件",
+      "text": "音楽はHoliznaCC0のCC0音源とKevin MacLeodのCC BY 4.0音源、フォントはSIL OFL 1.1です。第三者の素材・ツールを当方のMITやCC BYに置き換えません。個別の出典・変更・原文は下記に記載しています。"
+    }
+  ],
+  "attribution": "「証明書窓口ドリル」tocky8bit（rtoki） / https://madoguchi-drill.pages.dev/ / CC BY 4.0（https://creativecommons.org/licenses/by/4.0/）。変更：［変更内容を記載］。",
+  "notice": "本作のストーリーはフィクションです。登場する町・人物・団体・事件・出来事はすべて架空であり、北海道芽室町および同町の職員・住民・実際の出来事とは一切関係ありません。 本作は芽室町・MADOプロジェクトの公式教材ではありません。参照・使用した作者や団体による推奨・監修を示すものではありません。",
+  "upstream": "MADO-packagesの業務フロー・帳票構成を参考に、研修用の説明・図・操作画面を作成しています。確認順、架空自治体名、記載例などを変更しています。MADO本体・queueの実行コードは組み込んでいません。",
+  "motion": "人物動画はLivePortraitを制作時に使用して生成しました。受話器を持つ手元の動画は、元画像の一部分だけを動かして制作しています。既知の構図を使った制作スクリプトで、InsightFaceのコード・モデルや他人の実演動画は使用していません。モデル・Python環境はゲームに同梱していません。",
+  "fonts": "BIZ UDGothic、BIZ UDPGothic、BIZ UDPMincho、YomogiをGoogle Fontsから読み込みます。フォントファイルはこの配布物に同梱していません。",
+  "documents": [
+    {
+      "title": "本作のコード — MIT",
+      "file": "project-MIT.txt"
+    },
+    {
+      "title": "本作の独自コンテンツ — CC BY 4.0",
+      "file": "CC-BY-4.0.txt"
+    },
+    {
+      "title": "CC0 1.0",
+      "file": "CC0-1.0.txt"
+    },
+    {
+      "title": "MADO — MIT",
+      "file": "MADO-MIT.txt",
+      "source": "https://github.com/Memuro-Town/MADO/blob/96e0ff86e6ca5f2e99b9479f9d6de3f8c21b603d/LICENSE"
+    },
+    {
+      "title": "MADO-packages — MIT",
+      "file": "MADO-packages-MIT.txt",
+      "source": "https://github.com/Memuro-Town/MADO-packages/blob/70f912dbbcd67fa9241b38bb891034a9c604c6f9/LICENSE"
+    },
+    {
+      "title": "MADO-queue — MIT",
+      "file": "MADO-queue-MIT.txt",
+      "source": "https://github.com/Memuro-Town/MADO-queue/blob/4a080438bc147ddf22e8514f6bae06ecbd8f49b5/LICENSE"
+    },
+    {
+      "title": "bizudgothic — OFL-1.1",
+      "file": "bizudgothic-OFL.txt",
+      "source": "https://github.com/google/fonts/blob/main/ofl/bizudgothic/OFL.txt"
+    },
+    {
+      "title": "bizudpgothic — OFL-1.1",
+      "file": "bizudpgothic-OFL.txt",
+      "source": "https://github.com/google/fonts/blob/main/ofl/bizudpgothic/OFL.txt"
+    },
+    {
+      "title": "bizudpmincho — OFL-1.1",
+      "file": "bizudpmincho-OFL.txt",
+      "source": "https://github.com/google/fonts/blob/main/ofl/bizudpmincho/OFL.txt"
+    },
+    {
+      "title": "yomogi — OFL-1.1",
+      "file": "yomogi-OFL.txt",
+      "source": "https://github.com/google/fonts/blob/main/ofl/yomogi/OFL.txt"
+    },
+    {
+      "title": "LivePortrait — MIT (InsightFace model exception retained verbatim)",
+      "file": "LivePortrait.txt",
+      "source": "https://github.com/KlingAIResearch/LivePortrait/blob/9b294b3d0536135442ea73cb01e6cb3ca7029dd3/LICENSE"
+    }
+  ],
+  "creator_url": "https://github.com/rtoki",
+  "creator_display_name": "tocky8bit"
+}

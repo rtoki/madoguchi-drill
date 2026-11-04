@@ -1,0 +1,30 @@
+/* SPDX-FileCopyrightText: 2026 rtoki
+ * SPDX-License-Identifier: MIT
+ */
+
+.portrait-motion-host{position:absolute;inset:0;display:block;pointer-events:none;overflow:hidden}
+/* Trim the sprite-sheet seam above Yoshida's lower expression cells. */
+.photo-portrait:has(>.portrait-cell[data-photo="c11"]){clip-path:inset(.6% 0 0 0)}
+.portrait-motion-video{display:block;width:100%;height:100%;object-fit:cover;opacity:0;pointer-events:none;transition:opacity .24s ease}
+.portrait-motion-video.is-playing{opacity:1}
+.portrait-motion-host[data-motion-kind="visitor"]{mask-size:200% 200%;-webkit-mask-size:200% 200%;mask-repeat:no-repeat;-webkit-mask-repeat:no-repeat;mask-mode:alpha}
+.portrait-motion-host[data-motion-kind="visitor"] .portrait-motion-video{object-fit:fill;transition:none}
+.photo-portrait.is-moving>.portrait-cell{opacity:0}
+.photo-portrait.is-moving{transform-origin:50% 96%;animation:visitor-body-sway 8s ease-in-out infinite!important;will-change:transform}
+@keyframes visitor-body-sway{
+  0%,100%{transform:translate(0,0) rotate(0deg) scaleY(1)}
+  24%{transform:translate(3px,-2px) rotate(.65deg) scaleY(1.003)}
+  48%{transform:translate(0,-3px) rotate(.08deg) scaleY(1.005)}
+  73%{transform:translate(-3px,-1px) rotate(-.55deg) scaleY(1.002)}
+}
+.motion-settings{margin:20px 0 4px;padding-top:16px;border-top:1px solid var(--screen-line)}
+.motion-settings h4{margin:0 0 10px;font:700 14px var(--f-body);color:var(--head)}
+.motion-options{display:flex;flex-wrap:wrap;gap:8px}
+.motion-options button{min-height:44px;min-width:76px;padding:8px 16px;font:inherit;border:1px solid var(--screen-line);border-radius:4px;background:var(--soft);color:var(--ink);cursor:pointer}
+.motion-options button[aria-pressed="true"]{background:var(--yellow);color:#25251f;border-color:#ac9029;font-weight:700}
+.motion-options button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.motion-settings p{margin:10px 0 5px;font-size:13px;line-height:1.65}
+.motion-settings small{display:block;font-size:11px;line-height:1.7;color:var(--muted)}
+.title-settings .motion-settings{color:#fff9e4;border-color:#77705b}
+.title-settings .motion-settings h4{color:var(--yellow)}
+.title-settings .motion-settings small{color:#ded6bf}
