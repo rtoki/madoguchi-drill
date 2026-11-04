@@ -116,6 +116,8 @@ git diff --check
 
 Nodeの検証は `verify-ui.cjs`・`verify-counter.cjs`・`verify-story.cjs`・`verify-saves.cjs`・`verify-platform.cjs` の5分野へ追加する。単独実行は `node scripts/verify-ui.cjs --suite shared-reader` のように指定する。`test-tools.cjs` が各ケースを別プロセスで実行し、保存先・モジュールキャッシュを分離する。
 
+`.github/workflows/` には公開リポジトリ向けの品質検証・CodeQL・Dependency Reviewを置く。標準のGitHub-hosted runnerを使い、非公開リポジトリではジョブを実行しない。外部PRの検証には `pull_request` を使い、`pull_request_target` で投稿者のコードを実行しない。Secrets・配信権限・PR承認権限を渡さず、権限はジョブに必要な範囲だけ指定する。使用するActionsは完全なコミットSHAへ固定し、Dependabotで更新する。生成物・素材をCodeQLの解析対象へ追加せず、正本を解析する。
+
 スマホの選択画面や窓口端末を変更するときは、`verify-ui.cjs` の `reduced-motion-screen`・`mobile-form`・`quantity-keypad` も確認する。ブラウザーでは「動きを減らす」が有効な状態でも選択肢が見え、通常・ストーリー両モードで端末を開き直した後に［会話へ］で戻れることを確かめる。暗転レイヤーはアニメーションが止まっても画面を覆わないようにし、端末の再描画前には開いているダイアログを閉じる。
 
 - `verify-saves.cjs --suite scenario-runtime` は `build/starter/index.html`、版・ライセンス検証は `web-dist/` を読む。先に上記ビルドを行う。

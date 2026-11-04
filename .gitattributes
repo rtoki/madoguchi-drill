@@ -1,4 +1,4 @@
 # Retain original license texts byte-for-byte, including upstream whitespace.
-madoguchi-drill-yellow/licenses/*.txt -whitespace
+game/licenses/*.txt -whitespace
 # Generated page embeds those same full texts inside <pre> elements.
-madoguchi-drill-yellow/licenses.html -whitespace
+game/licenses.html -whitespace
