@@ -269,8 +269,10 @@ runSuites({
   assert.equal(g.run('CHAPTER_BLOCKS.length'),3);
   assert.equal(g.run('Object.keys(MYSTERY_PUZZLES).length'),3);
   assert.ok(g.run('CHAPTER_NODES.filter(n=>!n.training).reduce((sum,n)=>sum+chapterPages(n).reduce((s,p)=>s+p.text.length,0),0)')>=12600,'expanded prose must not revert to the short edition');
-  assert.equal(g.run('new Set(CHAPTER_NODES.flatMap(n=>chapterPages(n)).map(p=>p.scene).filter(s=>s.startsWith("scene-family-"))).size'),28);
+  assert.equal(g.run('new Set(CHAPTER_NODES.flatMap(n=>chapterPages(n)).map(p=>p.scene).filter(s=>s.startsWith("scene-family-"))).size'),30);
   assert.equal(g.run('CHAPTER_NODES.flatMap(n=>n.pages()).flatMap(p=>p.clues||[]).length'),19,'each clue is published on exactly one page');
+  assert.equal(g.run('chapterPages(chapterNode("safety")).find(p=>p.key==="paper-two-daughters").scene'),'scene-family-daughter-document-late');
+  assert.ok(g.run('CHAPTER_NODES.flatMap(n=>chapterPages(n)).filter(p=>p.time>="17:30").every(p=>p.scene!=="mentor-scene")'),'late story pages never reuse the sunlit normal-mode mentor');
   for(const id of g.run('Object.keys(PHOTO_ASSETS).filter(id=>id.startsWith("scene-family-"))')){
    assert.ok(['webp','jpeg','png'].some(type=>html.includes(`.multi-art[data-scene-key="${id}"]{background-image:url("data:image/${type};base64,`)),'dedicated scene image is embedded: '+id);
   }
@@ -810,8 +812,11 @@ runSuites({
   assert.ok(!g.stage.innerHTML.includes('id="storyMoment"'),'no early family-photo hint');
   jump('safety','paper-effect-discovered');
   assert.ok(g.stage.innerHTML.includes('type="range"'));
-  assert.ok(g.stage.innerHTML.includes('交付前の控え'));
-  assert.ok(g.stage.innerHTML.includes('現在の照会'));
+  assert.ok(g.stage.innerHTML.includes('先週の紙の控え'));
+  assert.ok(g.stage.innerHTML.includes('今日の照会'));
+  assert.equal((g.stage.innerHTML.match(/水沢 朋子/g)||[]).length,2,'both records identify the same household head');
+  assert.ok(g.stage.innerHTML.includes('水沢 里奈')&&g.stage.innerHTML.includes('水沢 誠'),'the two different family members are visible');
+  assert.ok(!g.stage.innerHTML.includes('覆われている'),'names are not obscured in the fictional comparison');
   const choices=g.run('JSON.stringify(S.chapter.choices)'),page=g.run('S.chapter.page');
   g.run('STORY_MOMENTS.move(75);saveFamilyProgress();');
   assert.equal(root.style['--paper-position'],'75');

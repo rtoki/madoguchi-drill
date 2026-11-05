@@ -67,7 +67,7 @@
     ]
   },
   "allowLegacySave": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scriptVersion": 1,
   "requiresEngine": {
     "minVersion": "1.0.0",
