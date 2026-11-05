@@ -294,5 +294,13 @@
   "scene-family-police-call": {
     "mobile": "93d66daa3de1c070",
     "desktop": "ee17032883d37d1f"
+  },
+  "scene-family-daughter-document-late": {
+    "mobile": "ed1a26f811ae8487",
+    "desktop": "e668cc3d9b14c81a"
+  },
+  "scene-family-manabe-evening": {
+    "mobile": "ba1affc68a167b3c",
+    "desktop": "1b36998abe725afd"
   }
 }

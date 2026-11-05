@@ -10796,614 +10796,6 @@
     }
   },
   {
-    "scene": "scene-family-daughter",
-    "variant": "mobile",
-    "file": "motion/scene-family-daughter-mobile.mp4",
-    "bytes": 95140,
-    "sha256": "60076fbc7be1ce85112e37cc0408d48da0a30914f44e5424d7b22cd54411acad",
-    "size": [
-      768,
-      512
-    ],
-    "fps": 20,
-    "seconds": 8,
-    "audio": false,
-    "render": {
-      "profile": "story-face-body-v1",
-      "source": "images/scene-family-daughter.png",
-      "source_crop": [
-        755,
-        -5,
-        530
-      ],
-      "method": "5 LivePortrait poses with optical-flow interpolation and a soft foreground body deformation, hands anchored near the desk",
-      "device": "cpu",
-      "seconds_rendering": 57.99,
-      "cues": [
-        [
-          0,
-          "rest"
-        ],
-        [
-          1.1,
-          "right"
-        ],
-        [
-          1.8,
-          "rest"
-        ],
-        [
-          1.9,
-          "blink"
-        ],
-        [
-          2.1,
-          "rest"
-        ],
-        [
-          3.4,
-          "nod"
-        ],
-        [
-          4.3,
-          "rest"
-        ],
-        [
-          5.2,
-          "left"
-        ],
-        [
-          6.0,
-          "rest"
-        ],
-        [
-          6.1,
-          "blink"
-        ],
-        [
-          6.3,
-          "rest"
-        ],
-        [
-          8,
-          "rest"
-        ]
-      ]
-    }
-  },
-  {
-    "scene": "scene-family-daughter",
-    "variant": "desktop",
-    "file": "motion/scene-family-daughter-desktop.mp4",
-    "bytes": 230206,
-    "sha256": "799ed31bf4e025231f3d8436da330d30805265407f20e613bb2bfea0edc5ef64",
-    "size": [
-      1152,
-      768
-    ],
-    "fps": 20,
-    "seconds": 8,
-    "audio": false,
-    "render": {
-      "profile": "story-face-body-v1",
-      "source": "images/scene-family-daughter.png",
-      "source_crop": [
-        755,
-        -5,
-        530
-      ],
-      "method": "5 LivePortrait poses with optical-flow interpolation and a soft foreground body deformation, hands anchored near the desk",
-      "device": "cpu",
-      "seconds_rendering": 57.99,
-      "cues": [
-        [
-          0,
-          "rest"
-        ],
-        [
-          1.1,
-          "right"
-        ],
-        [
-          1.8,
-          "rest"
-        ],
-        [
-          1.9,
-          "blink"
-        ],
-        [
-          2.1,
-          "rest"
-        ],
-        [
-          3.4,
-          "nod"
-        ],
-        [
-          4.3,
-          "rest"
-        ],
-        [
-          5.2,
-          "left"
-        ],
-        [
-          6.0,
-          "rest"
-        ],
-        [
-          6.1,
-          "blink"
-        ],
-        [
-          6.3,
-          "rest"
-        ],
-        [
-          8,
-          "rest"
-        ]
-      ]
-    }
-  },
-  {
-    "scene": "scene-family-daughter-document",
-    "variant": "mobile",
-    "file": "motion/scene-family-daughter-document-mobile.mp4",
-    "bytes": 106024,
-    "sha256": "96463d2eb5dd66ecd30dd75c2bceb835c5295438b126bfc336540071854a2271",
-    "size": [
-      768,
-      512
-    ],
-    "fps": 20,
-    "seconds": 8,
-    "audio": false,
-    "render": {
-      "profile": "story-face-body-v1",
-      "source": "images/scene-family-daughter-document.png",
-      "source_crop": [
-        740,
-        -5,
-        570
-      ],
-      "method": "5 LivePortrait poses with optical-flow interpolation and a soft foreground body deformation, hands anchored near the desk",
-      "device": "cpu",
-      "seconds_rendering": 55.5,
-      "cues": [
-        [
-          0,
-          "rest"
-        ],
-        [
-          1.1,
-          "right"
-        ],
-        [
-          1.8,
-          "rest"
-        ],
-        [
-          1.9,
-          "blink"
-        ],
-        [
-          2.1,
-          "rest"
-        ],
-        [
-          3.4,
-          "nod"
-        ],
-        [
-          4.3,
-          "rest"
-        ],
-        [
-          5.2,
-          "left"
-        ],
-        [
-          6.0,
-          "rest"
-        ],
-        [
-          6.1,
-          "blink"
-        ],
-        [
-          6.3,
-          "rest"
-        ],
-        [
-          8,
-          "rest"
-        ]
-      ]
-    }
-  },
-  {
-    "scene": "scene-family-daughter-document",
-    "variant": "desktop",
-    "file": "motion/scene-family-daughter-document-desktop.mp4",
-    "bytes": 268188,
-    "sha256": "21aa0d037565c21b90338954492e0994ed3f708fc0e4e0fe22355304548b7e68",
-    "size": [
-      1152,
-      768
-    ],
-    "fps": 20,
-    "seconds": 8,
-    "audio": false,
-    "render": {
-      "profile": "story-face-body-v1",
-      "source": "images/scene-family-daughter-document.png",
-      "source_crop": [
-        740,
-        -5,
-        570
-      ],
-      "method": "5 LivePortrait poses with optical-flow interpolation and a soft foreground body deformation, hands anchored near the desk",
-      "device": "cpu",
-      "seconds_rendering": 55.5,
-      "cues": [
-        [
-          0,
-          "rest"
-        ],
-        [
-          1.1,
-          "right"
-        ],
-        [
-          1.8,
-          "rest"
-        ],
-        [
-          1.9,
-          "blink"
-        ],
-        [
-          2.1,
-          "rest"
-        ],
-        [
-          3.4,
-          "nod"
-        ],
-        [
-          4.3,
-          "rest"
-        ],
-        [
-          5.2,
-          "left"
-        ],
-        [
-          6.0,
-          "rest"
-        ],
-        [
-          6.1,
-          "blink"
-        ],
-        [
-          6.3,
-          "rest"
-        ],
-        [
-          8,
-          "rest"
-        ]
-      ]
-    }
-  },
-  {
-    "scene": "scene-family-daughter-talk",
-    "variant": "mobile",
-    "file": "motion/scene-family-daughter-talk-mobile.mp4",
-    "bytes": 107274,
-    "sha256": "3236cfd410c75919707bc8606b68afc0ebefc4e1442a9e51374e32eb5107a9af",
-    "size": [
-      768,
-      512
-    ],
-    "fps": 20,
-    "seconds": 8,
-    "audio": false,
-    "render": {
-      "profile": "story-face-body-v1",
-      "source": "images/scene-family-daughter-talk.png",
-      "source_crop": [
-        710,
-        -10,
-        650
-      ],
-      "method": "5 LivePortrait poses with optical-flow interpolation and a soft foreground body deformation, hands anchored near the desk",
-      "device": "cpu",
-      "seconds_rendering": 54.59,
-      "cues": [
-        [
-          0,
-          "rest"
-        ],
-        [
-          1.1,
-          "right"
-        ],
-        [
-          1.8,
-          "rest"
-        ],
-        [
-          1.9,
-          "blink"
-        ],
-        [
-          2.1,
-          "rest"
-        ],
-        [
-          3.4,
-          "nod"
-        ],
-        [
-          4.3,
-          "rest"
-        ],
-        [
-          5.2,
-          "left"
-        ],
-        [
-          6.0,
-          "rest"
-        ],
-        [
-          6.1,
-          "blink"
-        ],
-        [
-          6.3,
-          "rest"
-        ],
-        [
-          8,
-          "rest"
-        ]
-      ]
-    }
-  },
-  {
-    "scene": "scene-family-daughter-talk",
-    "variant": "desktop",
-    "file": "motion/scene-family-daughter-talk-desktop.mp4",
-    "bytes": 271163,
-    "sha256": "09830c2d346f3bc94c18108ad246e4ab170ac565a2dfb60e57ed5698e77cea84",
-    "size": [
-      1152,
-      768
-    ],
-    "fps": 20,
-    "seconds": 8,
-    "audio": false,
-    "render": {
-      "profile": "story-face-body-v1",
-      "source": "images/scene-family-daughter-talk.png",
-      "source_crop": [
-        710,
-        -10,
-        650
-      ],
-      "method": "5 LivePortrait poses with optical-flow interpolation and a soft foreground body deformation, hands anchored near the desk",
-      "device": "cpu",
-      "seconds_rendering": 54.59,
-      "cues": [
-        [
-          0,
-          "rest"
-        ],
-        [
-          1.1,
-          "right"
-        ],
-        [
-          1.8,
-          "rest"
-        ],
-        [
-          1.9,
-          "blink"
-        ],
-        [
-          2.1,
-          "rest"
-        ],
-        [
-          3.4,
-          "nod"
-        ],
-        [
-          4.3,
-          "rest"
-        ],
-        [
-          5.2,
-          "left"
-        ],
-        [
-          6.0,
-          "rest"
-        ],
-        [
-          6.1,
-          "blink"
-        ],
-        [
-          6.3,
-          "rest"
-        ],
-        [
-          8,
-          "rest"
-        ]
-      ]
-    }
-  },
-  {
-    "scene": "scene-family-daughter-waiting",
-    "variant": "mobile",
-    "file": "motion/scene-family-daughter-waiting-mobile.mp4",
-    "bytes": 91223,
-    "sha256": "92be6f3e382b9d7bf56800907f53ce88280b200d03fd4a871cd9d00a0bf8c14f",
-    "size": [
-      768,
-      512
-    ],
-    "fps": 20,
-    "seconds": 8,
-    "audio": false,
-    "render": {
-      "profile": "story-face-body-v1",
-      "source": "images/scene-family-daughter-waiting.png",
-      "source_crop": [
-        760,
-        35,
-        550
-      ],
-      "method": "5 LivePortrait poses with optical-flow interpolation and a soft foreground body deformation, hands anchored near the desk",
-      "device": "cpu",
-      "seconds_rendering": 54.79,
-      "cues": [
-        [
-          0,
-          "rest"
-        ],
-        [
-          1.1,
-          "right"
-        ],
-        [
-          1.8,
-          "rest"
-        ],
-        [
-          1.9,
-          "blink"
-        ],
-        [
-          2.1,
-          "rest"
-        ],
-        [
-          3.4,
-          "nod"
-        ],
-        [
-          4.3,
-          "rest"
-        ],
-        [
-          5.2,
-          "left"
-        ],
-        [
-          6.0,
-          "rest"
-        ],
-        [
-          6.1,
-          "blink"
-        ],
-        [
-          6.3,
-          "rest"
-        ],
-        [
-          8,
-          "rest"
-        ]
-      ]
-    }
-  },
-  {
-    "scene": "scene-family-daughter-waiting",
-    "variant": "desktop",
-    "file": "motion/scene-family-daughter-waiting-desktop.mp4",
-    "bytes": 218239,
-    "sha256": "80b1675a8a71d3a7cb48b438bdf48acc7b0aaa6026e11125a626b4955aeda9db",
-    "size": [
-      1152,
-      768
-    ],
-    "fps": 20,
-    "seconds": 8,
-    "audio": false,
-    "render": {
-      "profile": "story-face-body-v1",
-      "source": "images/scene-family-daughter-waiting.png",
-      "source_crop": [
-        760,
-        35,
-        550
-      ],
-      "method": "5 LivePortrait poses with optical-flow interpolation and a soft foreground body deformation, hands anchored near the desk",
-      "device": "cpu",
-      "seconds_rendering": 54.79,
-      "cues": [
-        [
-          0,
-          "rest"
-        ],
-        [
-          1.1,
-          "right"
-        ],
-        [
-          1.8,
-          "rest"
-        ],
-        [
-          1.9,
-          "blink"
-        ],
-        [
-          2.1,
-          "rest"
-        ],
-        [
-          3.4,
-          "nod"
-        ],
-        [
-          4.3,
-          "rest"
-        ],
-        [
-          5.2,
-          "left"
-        ],
-        [
-          6.0,
-          "rest"
-        ],
-        [
-          6.1,
-          "blink"
-        ],
-        [
-          6.3,
-          "rest"
-        ],
-        [
-          8,
-          "rest"
-        ]
-      ]
-    }
-  },
-  {
     "scene": "scene-family-kurose-card",
     "variant": "mobile",
     "file": "motion/scene-family-kurose-card-mobile.mp4",
@@ -12308,150 +11700,6 @@
     }
   },
   {
-    "scene": "scene-family-daughter-phone",
-    "variant": "mobile",
-    "file": "motion/scene-family-daughter-phone-mobile.mp4",
-    "bytes": 86514,
-    "sha256": "93fe712cc82c955b7f9080e8c1f5729c11a3660136246657eff73261fa53eba8",
-    "size": [
-      768,
-      512
-    ],
-    "fps": 20,
-    "seconds": 8,
-    "audio": false,
-    "render": {
-      "profile": "story-conversation-v1",
-      "source": "images/scene-family-daughter-phone.png",
-      "profiles": "motion/story-conversation-profiles.json",
-      "method": "Independent LivePortrait face poses and optical-flow interpolation; masked body/hand sway with fixed anchors",
-      "device": "cpu",
-      "seconds_rendering": 53.21,
-      "cues": [
-        [
-          0,
-          "rest"
-        ],
-        [
-          1.1,
-          "right"
-        ],
-        [
-          1.8,
-          "rest"
-        ],
-        [
-          1.9,
-          "blink"
-        ],
-        [
-          2.1,
-          "rest"
-        ],
-        [
-          3.4,
-          "nod"
-        ],
-        [
-          4.3,
-          "rest"
-        ],
-        [
-          5.2,
-          "left"
-        ],
-        [
-          6,
-          "rest"
-        ],
-        [
-          6.1,
-          "blink"
-        ],
-        [
-          6.3,
-          "rest"
-        ],
-        [
-          8,
-          "rest"
-        ]
-      ]
-    }
-  },
-  {
-    "scene": "scene-family-daughter-phone",
-    "variant": "desktop",
-    "file": "motion/scene-family-daughter-phone-desktop.mp4",
-    "bytes": 197185,
-    "sha256": "c286da8f655993b7be6b8564fb149a27db50299df044158b2762fdc9848b9d0d",
-    "size": [
-      1152,
-      768
-    ],
-    "fps": 20,
-    "seconds": 8,
-    "audio": false,
-    "render": {
-      "profile": "story-conversation-v1",
-      "source": "images/scene-family-daughter-phone.png",
-      "profiles": "motion/story-conversation-profiles.json",
-      "method": "Independent LivePortrait face poses and optical-flow interpolation; masked body/hand sway with fixed anchors",
-      "device": "cpu",
-      "seconds_rendering": 53.21,
-      "cues": [
-        [
-          0,
-          "rest"
-        ],
-        [
-          1.1,
-          "right"
-        ],
-        [
-          1.8,
-          "rest"
-        ],
-        [
-          1.9,
-          "blink"
-        ],
-        [
-          2.1,
-          "rest"
-        ],
-        [
-          3.4,
-          "nod"
-        ],
-        [
-          4.3,
-          "rest"
-        ],
-        [
-          5.2,
-          "left"
-        ],
-        [
-          6,
-          "rest"
-        ],
-        [
-          6.1,
-          "blink"
-        ],
-        [
-          6.3,
-          "rest"
-        ],
-        [
-          8,
-          "rest"
-        ]
-      ]
-    }
-  },
-  {
     "scene": "scene-family-waiting",
     "variant": "mobile",
     "file": "motion/scene-family-waiting-mobile.mp4",
@@ -12740,150 +11988,6 @@
     }
   },
   {
-    "scene": "scene-family-police-call",
-    "variant": "mobile",
-    "file": "motion/scene-family-police-call-mobile.mp4",
-    "bytes": 47409,
-    "sha256": "93d66daa3de1c07051674b2ece613e473b592469701155626f6df580762bfc1e",
-    "size": [
-      768,
-      512
-    ],
-    "fps": 20,
-    "seconds": 8,
-    "audio": false,
-    "render": {
-      "profile": "story-conversation-v1",
-      "source": "images/scene-family-police-call.png",
-      "profiles": "motion/story-conversation-profiles.json",
-      "method": "Masked procedural hand/receiver sway with a fixed arm anchor; no face synthesis",
-      "device": "cpu",
-      "seconds_rendering": 1.76,
-      "cues": [
-        [
-          0,
-          "rest"
-        ],
-        [
-          1.1,
-          "right"
-        ],
-        [
-          1.8,
-          "rest"
-        ],
-        [
-          1.9,
-          "blink"
-        ],
-        [
-          2.1,
-          "rest"
-        ],
-        [
-          3.4,
-          "nod"
-        ],
-        [
-          4.3,
-          "rest"
-        ],
-        [
-          5.2,
-          "left"
-        ],
-        [
-          6,
-          "rest"
-        ],
-        [
-          6.1,
-          "blink"
-        ],
-        [
-          6.3,
-          "rest"
-        ],
-        [
-          8,
-          "rest"
-        ]
-      ]
-    }
-  },
-  {
-    "scene": "scene-family-police-call",
-    "variant": "desktop",
-    "file": "motion/scene-family-police-call-desktop.mp4",
-    "bytes": 101125,
-    "sha256": "ee17032883d37d1f2da86e2b5e6cc3a180729fec7ed00d35fa18d2682c395eba",
-    "size": [
-      1152,
-      768
-    ],
-    "fps": 20,
-    "seconds": 8,
-    "audio": false,
-    "render": {
-      "profile": "story-conversation-v1",
-      "source": "images/scene-family-police-call.png",
-      "profiles": "motion/story-conversation-profiles.json",
-      "method": "Masked procedural hand/receiver sway with a fixed arm anchor; no face synthesis",
-      "device": "cpu",
-      "seconds_rendering": 1.76,
-      "cues": [
-        [
-          0,
-          "rest"
-        ],
-        [
-          1.1,
-          "right"
-        ],
-        [
-          1.8,
-          "rest"
-        ],
-        [
-          1.9,
-          "blink"
-        ],
-        [
-          2.1,
-          "rest"
-        ],
-        [
-          3.4,
-          "nod"
-        ],
-        [
-          4.3,
-          "rest"
-        ],
-        [
-          5.2,
-          "left"
-        ],
-        [
-          6,
-          "rest"
-        ],
-        [
-          6.1,
-          "blink"
-        ],
-        [
-          6.3,
-          "rest"
-        ],
-        [
-          8,
-          "rest"
-        ]
-      ]
-    }
-  },
-  {
     "scene": "scene-family-manabe-stairs",
     "variant": "mobile",
     "file": "motion/scene-family-manabe-stairs-mobile.mp4",
@@ -12975,6 +12079,1206 @@
       "method": "Independent LivePortrait face poses and optical-flow interpolation; masked body/hand sway with fixed anchors",
       "device": "cpu",
       "seconds_rendering": 70.06,
+      "cues": [
+        [
+          0,
+          "rest"
+        ],
+        [
+          1.1,
+          "right"
+        ],
+        [
+          1.8,
+          "rest"
+        ],
+        [
+          1.9,
+          "blink"
+        ],
+        [
+          2.1,
+          "rest"
+        ],
+        [
+          3.4,
+          "nod"
+        ],
+        [
+          4.3,
+          "rest"
+        ],
+        [
+          5.2,
+          "left"
+        ],
+        [
+          6,
+          "rest"
+        ],
+        [
+          6.1,
+          "blink"
+        ],
+        [
+          6.3,
+          "rest"
+        ],
+        [
+          8,
+          "rest"
+        ]
+      ]
+    }
+  },
+  {
+    "scene": "scene-family-daughter-document",
+    "variant": "mobile",
+    "file": "motion/scene-family-daughter-document-mobile.mp4",
+    "bytes": 95819,
+    "sha256": "360d0fddaf696ddcaf64e67ad96e2c163f567f84542f3063ceb24d46631bf130",
+    "size": [
+      768,
+      512
+    ],
+    "fps": 20,
+    "seconds": 8,
+    "audio": false,
+    "render": {
+      "profile": "story-face-body-v1",
+      "source": "images/scene-family-daughter-document.png",
+      "source_crop": [
+        740,
+        -5,
+        570
+      ],
+      "method": "5 LivePortrait poses with optical-flow interpolation and a soft foreground body deformation, hands anchored near the desk",
+      "device": "cpu",
+      "seconds_rendering": 61.89,
+      "cues": [
+        [
+          0,
+          "rest"
+        ],
+        [
+          1.1,
+          "right"
+        ],
+        [
+          1.8,
+          "rest"
+        ],
+        [
+          1.9,
+          "blink"
+        ],
+        [
+          2.1,
+          "rest"
+        ],
+        [
+          3.4,
+          "nod"
+        ],
+        [
+          4.3,
+          "rest"
+        ],
+        [
+          5.2,
+          "left"
+        ],
+        [
+          6.0,
+          "rest"
+        ],
+        [
+          6.1,
+          "blink"
+        ],
+        [
+          6.3,
+          "rest"
+        ],
+        [
+          8,
+          "rest"
+        ]
+      ]
+    }
+  },
+  {
+    "scene": "scene-family-daughter-document",
+    "variant": "desktop",
+    "file": "motion/scene-family-daughter-document-desktop.mp4",
+    "bytes": 243253,
+    "sha256": "565fe1a2359074aaa82b0d87acf1b81dd1195d37fe47478252d79111153518c4",
+    "size": [
+      1152,
+      768
+    ],
+    "fps": 20,
+    "seconds": 8,
+    "audio": false,
+    "render": {
+      "profile": "story-face-body-v1",
+      "source": "images/scene-family-daughter-document.png",
+      "source_crop": [
+        740,
+        -5,
+        570
+      ],
+      "method": "5 LivePortrait poses with optical-flow interpolation and a soft foreground body deformation, hands anchored near the desk",
+      "device": "cpu",
+      "seconds_rendering": 61.89,
+      "cues": [
+        [
+          0,
+          "rest"
+        ],
+        [
+          1.1,
+          "right"
+        ],
+        [
+          1.8,
+          "rest"
+        ],
+        [
+          1.9,
+          "blink"
+        ],
+        [
+          2.1,
+          "rest"
+        ],
+        [
+          3.4,
+          "nod"
+        ],
+        [
+          4.3,
+          "rest"
+        ],
+        [
+          5.2,
+          "left"
+        ],
+        [
+          6.0,
+          "rest"
+        ],
+        [
+          6.1,
+          "blink"
+        ],
+        [
+          6.3,
+          "rest"
+        ],
+        [
+          8,
+          "rest"
+        ]
+      ]
+    }
+  },
+  {
+    "scene": "scene-family-daughter-talk",
+    "variant": "mobile",
+    "file": "motion/scene-family-daughter-talk-mobile.mp4",
+    "bytes": 98082,
+    "sha256": "1ccf340cf82338817c76064db97aa6c11190f10cdde10f6f984c1054c1696140",
+    "size": [
+      768,
+      512
+    ],
+    "fps": 20,
+    "seconds": 8,
+    "audio": false,
+    "render": {
+      "profile": "story-face-body-v1",
+      "source": "images/scene-family-daughter-talk.png",
+      "source_crop": [
+        710,
+        -10,
+        650
+      ],
+      "method": "5 LivePortrait poses with optical-flow interpolation and a soft foreground body deformation, hands anchored near the desk",
+      "device": "cpu",
+      "seconds_rendering": 61.16,
+      "cues": [
+        [
+          0,
+          "rest"
+        ],
+        [
+          1.1,
+          "right"
+        ],
+        [
+          1.8,
+          "rest"
+        ],
+        [
+          1.9,
+          "blink"
+        ],
+        [
+          2.1,
+          "rest"
+        ],
+        [
+          3.4,
+          "nod"
+        ],
+        [
+          4.3,
+          "rest"
+        ],
+        [
+          5.2,
+          "left"
+        ],
+        [
+          6.0,
+          "rest"
+        ],
+        [
+          6.1,
+          "blink"
+        ],
+        [
+          6.3,
+          "rest"
+        ],
+        [
+          8,
+          "rest"
+        ]
+      ]
+    }
+  },
+  {
+    "scene": "scene-family-daughter-talk",
+    "variant": "desktop",
+    "file": "motion/scene-family-daughter-talk-desktop.mp4",
+    "bytes": 251841,
+    "sha256": "ebc6fe101f0af0449417eb97f5642aa572153f9657a23f74c98d8a2cdb8e4d89",
+    "size": [
+      1152,
+      768
+    ],
+    "fps": 20,
+    "seconds": 8,
+    "audio": false,
+    "render": {
+      "profile": "story-face-body-v1",
+      "source": "images/scene-family-daughter-talk.png",
+      "source_crop": [
+        710,
+        -10,
+        650
+      ],
+      "method": "5 LivePortrait poses with optical-flow interpolation and a soft foreground body deformation, hands anchored near the desk",
+      "device": "cpu",
+      "seconds_rendering": 61.16,
+      "cues": [
+        [
+          0,
+          "rest"
+        ],
+        [
+          1.1,
+          "right"
+        ],
+        [
+          1.8,
+          "rest"
+        ],
+        [
+          1.9,
+          "blink"
+        ],
+        [
+          2.1,
+          "rest"
+        ],
+        [
+          3.4,
+          "nod"
+        ],
+        [
+          4.3,
+          "rest"
+        ],
+        [
+          5.2,
+          "left"
+        ],
+        [
+          6.0,
+          "rest"
+        ],
+        [
+          6.1,
+          "blink"
+        ],
+        [
+          6.3,
+          "rest"
+        ],
+        [
+          8,
+          "rest"
+        ]
+      ]
+    }
+  },
+  {
+    "scene": "scene-family-daughter-waiting",
+    "variant": "mobile",
+    "file": "motion/scene-family-daughter-waiting-mobile.mp4",
+    "bytes": 83163,
+    "sha256": "a7222b55bac7a829d6e4d0d594d8150bf58de121da7f85f4bd28b9c11d2f627e",
+    "size": [
+      768,
+      512
+    ],
+    "fps": 20,
+    "seconds": 8,
+    "audio": false,
+    "render": {
+      "profile": "story-face-body-v1",
+      "source": "images/scene-family-daughter-waiting.png",
+      "source_crop": [
+        760,
+        35,
+        550
+      ],
+      "method": "5 LivePortrait poses with optical-flow interpolation and a soft foreground body deformation, hands anchored near the desk",
+      "device": "cpu",
+      "seconds_rendering": 60.09,
+      "cues": [
+        [
+          0,
+          "rest"
+        ],
+        [
+          1.1,
+          "right"
+        ],
+        [
+          1.8,
+          "rest"
+        ],
+        [
+          1.9,
+          "blink"
+        ],
+        [
+          2.1,
+          "rest"
+        ],
+        [
+          3.4,
+          "nod"
+        ],
+        [
+          4.3,
+          "rest"
+        ],
+        [
+          5.2,
+          "left"
+        ],
+        [
+          6.0,
+          "rest"
+        ],
+        [
+          6.1,
+          "blink"
+        ],
+        [
+          6.3,
+          "rest"
+        ],
+        [
+          8,
+          "rest"
+        ]
+      ]
+    }
+  },
+  {
+    "scene": "scene-family-daughter-waiting",
+    "variant": "desktop",
+    "file": "motion/scene-family-daughter-waiting-desktop.mp4",
+    "bytes": 197002,
+    "sha256": "a533ea89f1aef0390150d30adadbd25973a68ddf99ada7729b744ecf5db7e0ec",
+    "size": [
+      1152,
+      768
+    ],
+    "fps": 20,
+    "seconds": 8,
+    "audio": false,
+    "render": {
+      "profile": "story-face-body-v1",
+      "source": "images/scene-family-daughter-waiting.png",
+      "source_crop": [
+        760,
+        35,
+        550
+      ],
+      "method": "5 LivePortrait poses with optical-flow interpolation and a soft foreground body deformation, hands anchored near the desk",
+      "device": "cpu",
+      "seconds_rendering": 60.09,
+      "cues": [
+        [
+          0,
+          "rest"
+        ],
+        [
+          1.1,
+          "right"
+        ],
+        [
+          1.8,
+          "rest"
+        ],
+        [
+          1.9,
+          "blink"
+        ],
+        [
+          2.1,
+          "rest"
+        ],
+        [
+          3.4,
+          "nod"
+        ],
+        [
+          4.3,
+          "rest"
+        ],
+        [
+          5.2,
+          "left"
+        ],
+        [
+          6.0,
+          "rest"
+        ],
+        [
+          6.1,
+          "blink"
+        ],
+        [
+          6.3,
+          "rest"
+        ],
+        [
+          8,
+          "rest"
+        ]
+      ]
+    }
+  },
+  {
+    "scene": "scene-family-daughter-document-late",
+    "variant": "mobile",
+    "file": "motion/scene-family-daughter-document-late-mobile.mp4",
+    "bytes": 105558,
+    "sha256": "ed1a26f811ae84878c4acff8eaffbde23df0c71b9677ff3afe402267612f2d94",
+    "size": [
+      768,
+      512
+    ],
+    "fps": 20,
+    "seconds": 8,
+    "audio": false,
+    "render": {
+      "profile": "story-face-body-v1",
+      "source": "images/scene-family-daughter-document-late.png",
+      "source_crop": [
+        740,
+        -5,
+        570
+      ],
+      "method": "5 LivePortrait poses with optical-flow interpolation and a soft foreground body deformation, hands anchored near the desk",
+      "device": "mps",
+      "seconds_rendering": 13.49,
+      "cues": [
+        [
+          0,
+          "rest"
+        ],
+        [
+          1.1,
+          "right"
+        ],
+        [
+          1.8,
+          "rest"
+        ],
+        [
+          1.9,
+          "blink"
+        ],
+        [
+          2.1,
+          "rest"
+        ],
+        [
+          3.4,
+          "nod"
+        ],
+        [
+          4.3,
+          "rest"
+        ],
+        [
+          5.2,
+          "left"
+        ],
+        [
+          6.0,
+          "rest"
+        ],
+        [
+          6.1,
+          "blink"
+        ],
+        [
+          6.3,
+          "rest"
+        ],
+        [
+          8,
+          "rest"
+        ]
+      ]
+    }
+  },
+  {
+    "scene": "scene-family-daughter-document-late",
+    "variant": "desktop",
+    "file": "motion/scene-family-daughter-document-late-desktop.mp4",
+    "bytes": 279802,
+    "sha256": "e668cc3d9b14c81afe5468d5deb0ee1ee3476761aeb541691b56c1ee289804bf",
+    "size": [
+      1152,
+      768
+    ],
+    "fps": 20,
+    "seconds": 8,
+    "audio": false,
+    "render": {
+      "profile": "story-face-body-v1",
+      "source": "images/scene-family-daughter-document-late.png",
+      "source_crop": [
+        740,
+        -5,
+        570
+      ],
+      "method": "5 LivePortrait poses with optical-flow interpolation and a soft foreground body deformation, hands anchored near the desk",
+      "device": "mps",
+      "seconds_rendering": 13.49,
+      "cues": [
+        [
+          0,
+          "rest"
+        ],
+        [
+          1.1,
+          "right"
+        ],
+        [
+          1.8,
+          "rest"
+        ],
+        [
+          1.9,
+          "blink"
+        ],
+        [
+          2.1,
+          "rest"
+        ],
+        [
+          3.4,
+          "nod"
+        ],
+        [
+          4.3,
+          "rest"
+        ],
+        [
+          5.2,
+          "left"
+        ],
+        [
+          6.0,
+          "rest"
+        ],
+        [
+          6.1,
+          "blink"
+        ],
+        [
+          6.3,
+          "rest"
+        ],
+        [
+          8,
+          "rest"
+        ]
+      ]
+    }
+  },
+  {
+    "scene": "scene-family-manabe-evening",
+    "variant": "mobile",
+    "file": "motion/scene-family-manabe-evening-mobile.mp4",
+    "bytes": 76484,
+    "sha256": "ba1affc68a167b3cedb491af74b7c1a37ac40e6b8b4266d405abcebff4b41e00",
+    "size": [
+      768,
+      512
+    ],
+    "fps": 20,
+    "seconds": 8,
+    "audio": false,
+    "render": {
+      "profile": "story-face-body-v1",
+      "source": "images/scene-family-manabe-evening.png",
+      "source_crop": [
+        740,
+        -40,
+        640
+      ],
+      "method": "5 LivePortrait poses with optical-flow interpolation and a soft foreground body deformation, hands anchored near the desk",
+      "device": "mps",
+      "seconds_rendering": 12.45,
+      "cues": [
+        [
+          0,
+          "rest"
+        ],
+        [
+          1.1,
+          "right"
+        ],
+        [
+          1.8,
+          "rest"
+        ],
+        [
+          1.9,
+          "blink"
+        ],
+        [
+          2.1,
+          "rest"
+        ],
+        [
+          3.4,
+          "nod"
+        ],
+        [
+          4.3,
+          "rest"
+        ],
+        [
+          5.2,
+          "left"
+        ],
+        [
+          6.0,
+          "rest"
+        ],
+        [
+          6.1,
+          "blink"
+        ],
+        [
+          6.3,
+          "rest"
+        ],
+        [
+          8,
+          "rest"
+        ]
+      ]
+    }
+  },
+  {
+    "scene": "scene-family-manabe-evening",
+    "variant": "desktop",
+    "file": "motion/scene-family-manabe-evening-desktop.mp4",
+    "bytes": 174546,
+    "sha256": "1b36998abe725afd162a7cba86ee75f96dfaac44ddd988e2d58bc35ba1f138cf",
+    "size": [
+      1152,
+      768
+    ],
+    "fps": 20,
+    "seconds": 8,
+    "audio": false,
+    "render": {
+      "profile": "story-face-body-v1",
+      "source": "images/scene-family-manabe-evening.png",
+      "source_crop": [
+        740,
+        -40,
+        640
+      ],
+      "method": "5 LivePortrait poses with optical-flow interpolation and a soft foreground body deformation, hands anchored near the desk",
+      "device": "mps",
+      "seconds_rendering": 12.45,
+      "cues": [
+        [
+          0,
+          "rest"
+        ],
+        [
+          1.1,
+          "right"
+        ],
+        [
+          1.8,
+          "rest"
+        ],
+        [
+          1.9,
+          "blink"
+        ],
+        [
+          2.1,
+          "rest"
+        ],
+        [
+          3.4,
+          "nod"
+        ],
+        [
+          4.3,
+          "rest"
+        ],
+        [
+          5.2,
+          "left"
+        ],
+        [
+          6.0,
+          "rest"
+        ],
+        [
+          6.1,
+          "blink"
+        ],
+        [
+          6.3,
+          "rest"
+        ],
+        [
+          8,
+          "rest"
+        ]
+      ]
+    }
+  },
+  {
+    "scene": "scene-family-daughter",
+    "variant": "mobile",
+    "file": "motion/scene-family-daughter-mobile.mp4",
+    "bytes": 90367,
+    "sha256": "ecc2868665d95e4e407c8150271e3cad4874f8c88c1bece7fa93fc1962f8adb1",
+    "size": [
+      768,
+      512
+    ],
+    "fps": 20,
+    "seconds": 8,
+    "audio": false,
+    "render": {
+      "profile": "story-face-body-v1",
+      "source": "images/scene-family-daughter.png",
+      "source_crop": [
+        755,
+        -5,
+        530
+      ],
+      "method": "5 LivePortrait poses with optical-flow interpolation and a soft foreground body deformation, hands anchored near the desk",
+      "device": "mps",
+      "seconds_rendering": 12.59,
+      "cues": [
+        [
+          0,
+          "rest"
+        ],
+        [
+          1.1,
+          "right"
+        ],
+        [
+          1.8,
+          "rest"
+        ],
+        [
+          1.9,
+          "blink"
+        ],
+        [
+          2.1,
+          "rest"
+        ],
+        [
+          3.4,
+          "nod"
+        ],
+        [
+          4.3,
+          "rest"
+        ],
+        [
+          5.2,
+          "left"
+        ],
+        [
+          6.0,
+          "rest"
+        ],
+        [
+          6.1,
+          "blink"
+        ],
+        [
+          6.3,
+          "rest"
+        ],
+        [
+          8,
+          "rest"
+        ]
+      ]
+    }
+  },
+  {
+    "scene": "scene-family-daughter",
+    "variant": "desktop",
+    "file": "motion/scene-family-daughter-desktop.mp4",
+    "bytes": 210190,
+    "sha256": "f826ccee8339f05639e481232c3c37e0f3ac1876d38eecaa9e71579068bbea9c",
+    "size": [
+      1152,
+      768
+    ],
+    "fps": 20,
+    "seconds": 8,
+    "audio": false,
+    "render": {
+      "profile": "story-face-body-v1",
+      "source": "images/scene-family-daughter.png",
+      "source_crop": [
+        755,
+        -5,
+        530
+      ],
+      "method": "5 LivePortrait poses with optical-flow interpolation and a soft foreground body deformation, hands anchored near the desk",
+      "device": "mps",
+      "seconds_rendering": 12.59,
+      "cues": [
+        [
+          0,
+          "rest"
+        ],
+        [
+          1.1,
+          "right"
+        ],
+        [
+          1.8,
+          "rest"
+        ],
+        [
+          1.9,
+          "blink"
+        ],
+        [
+          2.1,
+          "rest"
+        ],
+        [
+          3.4,
+          "nod"
+        ],
+        [
+          4.3,
+          "rest"
+        ],
+        [
+          5.2,
+          "left"
+        ],
+        [
+          6.0,
+          "rest"
+        ],
+        [
+          6.1,
+          "blink"
+        ],
+        [
+          6.3,
+          "rest"
+        ],
+        [
+          8,
+          "rest"
+        ]
+      ]
+    }
+  },
+  {
+    "scene": "scene-family-daughter-phone",
+    "variant": "mobile",
+    "file": "motion/scene-family-daughter-phone-mobile.mp4",
+    "bytes": 81590,
+    "sha256": "cf039272f5be4b7beeac5ccfc449947d0481eb50f3b5699cf2238b9f57f0f7b1",
+    "size": [
+      768,
+      512
+    ],
+    "fps": 20,
+    "seconds": 8,
+    "audio": false,
+    "render": {
+      "profile": "story-conversation-v1",
+      "source": "images/scene-family-daughter-phone.png",
+      "profiles": "motion/story-conversation-profiles.json",
+      "method": "Independent LivePortrait face poses and optical-flow interpolation; masked body/hand sway with fixed anchors",
+      "device": "mps",
+      "seconds_rendering": 13.82,
+      "cues": [
+        [
+          0,
+          "rest"
+        ],
+        [
+          1.1,
+          "right"
+        ],
+        [
+          1.8,
+          "rest"
+        ],
+        [
+          1.9,
+          "blink"
+        ],
+        [
+          2.1,
+          "rest"
+        ],
+        [
+          3.4,
+          "nod"
+        ],
+        [
+          4.3,
+          "rest"
+        ],
+        [
+          5.2,
+          "left"
+        ],
+        [
+          6,
+          "rest"
+        ],
+        [
+          6.1,
+          "blink"
+        ],
+        [
+          6.3,
+          "rest"
+        ],
+        [
+          8,
+          "rest"
+        ]
+      ]
+    }
+  },
+  {
+    "scene": "scene-family-daughter-phone",
+    "variant": "desktop",
+    "file": "motion/scene-family-daughter-phone-desktop.mp4",
+    "bytes": 189112,
+    "sha256": "df71c114505a8f00eaaa0f9e5226d84a716f539394585518ccf49f86d1810556",
+    "size": [
+      1152,
+      768
+    ],
+    "fps": 20,
+    "seconds": 8,
+    "audio": false,
+    "render": {
+      "profile": "story-conversation-v1",
+      "source": "images/scene-family-daughter-phone.png",
+      "profiles": "motion/story-conversation-profiles.json",
+      "method": "Independent LivePortrait face poses and optical-flow interpolation; masked body/hand sway with fixed anchors",
+      "device": "mps",
+      "seconds_rendering": 13.82,
+      "cues": [
+        [
+          0,
+          "rest"
+        ],
+        [
+          1.1,
+          "right"
+        ],
+        [
+          1.8,
+          "rest"
+        ],
+        [
+          1.9,
+          "blink"
+        ],
+        [
+          2.1,
+          "rest"
+        ],
+        [
+          3.4,
+          "nod"
+        ],
+        [
+          4.3,
+          "rest"
+        ],
+        [
+          5.2,
+          "left"
+        ],
+        [
+          6,
+          "rest"
+        ],
+        [
+          6.1,
+          "blink"
+        ],
+        [
+          6.3,
+          "rest"
+        ],
+        [
+          8,
+          "rest"
+        ]
+      ]
+    }
+  },
+  {
+    "scene": "scene-family-police-call",
+    "variant": "mobile",
+    "file": "motion/scene-family-police-call-mobile.mp4",
+    "bytes": 52400,
+    "sha256": "60674622e44fd53a6413f25df8c0f58dfd6826067c5ce17290c07d2d1a8b588b",
+    "size": [
+      768,
+      512
+    ],
+    "fps": 20,
+    "seconds": 8,
+    "audio": false,
+    "render": {
+      "profile": "story-conversation-v1",
+      "source": "images/scene-family-police-call.png",
+      "profiles": "motion/story-conversation-profiles.json",
+      "method": "Masked procedural hand/receiver sway with a fixed arm anchor; no face synthesis",
+      "device": "mps",
+      "seconds_rendering": 1.89,
+      "cues": [
+        [
+          0,
+          "rest"
+        ],
+        [
+          1.1,
+          "right"
+        ],
+        [
+          1.8,
+          "rest"
+        ],
+        [
+          1.9,
+          "blink"
+        ],
+        [
+          2.1,
+          "rest"
+        ],
+        [
+          3.4,
+          "nod"
+        ],
+        [
+          4.3,
+          "rest"
+        ],
+        [
+          5.2,
+          "left"
+        ],
+        [
+          6,
+          "rest"
+        ],
+        [
+          6.1,
+          "blink"
+        ],
+        [
+          6.3,
+          "rest"
+        ],
+        [
+          8,
+          "rest"
+        ]
+      ]
+    }
+  },
+  {
+    "scene": "scene-family-police-call",
+    "variant": "desktop",
+    "file": "motion/scene-family-police-call-desktop.mp4",
+    "bytes": 114249,
+    "sha256": "d021dc1bbc2b465f2eb5e16e32b3c771f775ff9390940be9eb86527888db87a8",
+    "size": [
+      1152,
+      768
+    ],
+    "fps": 20,
+    "seconds": 8,
+    "audio": false,
+    "render": {
+      "profile": "story-conversation-v1",
+      "source": "images/scene-family-police-call.png",
+      "profiles": "motion/story-conversation-profiles.json",
+      "method": "Masked procedural hand/receiver sway with a fixed arm anchor; no face synthesis",
+      "device": "mps",
+      "seconds_rendering": 1.89,
       "cues": [
         [
           0,

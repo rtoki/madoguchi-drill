@@ -32,9 +32,9 @@ runSuites({
    const teacher=g.run('sceneHTML(true)');assert.equal((teacher.match(/data-motion-key=/g)||[]).length,1);assert.ok(teacher.includes('data-motion-key="mentor-smile"'));
    g.run('S.visible=false;S.beats=[{t:"say",w:"n"}];');assert.ok(!g.run('sceneHTML(true)').includes('data-motion-key'),'no animation after visitor leaves');
   }
-  assert.equal(Object.keys(g.run('MOTION_ASSETS')).length,74,'56 visitor expressions, two mentor scenes and sixteen family-story scenes');
+  assert.equal(Object.keys(g.run('MOTION_ASSETS')).length,76,'56 visitor expressions, two mentor scenes and eighteen family-story scenes');
   const conversations=Object.keys(JSON.parse(fs.readFileSync(path.join(__dirname,'../motion/story-conversation-profiles.json'),'utf8')));
-  for(const scene of ['scene-family-daughter-document','scene-family-daughter-talk','scene-family-daughter-waiting','scene-family-kurose-card','scene-family-yoshida-wait','scene-family-manabe-envelope','scene-family-yoshida-counter','scene-family-kurose-lobby',...conversations]){
+  for(const scene of ['scene-family-daughter-document','scene-family-daughter-talk','scene-family-daughter-waiting','scene-family-daughter-document-late','scene-family-manabe-evening','scene-family-kurose-card','scene-family-yoshida-wait','scene-family-manabe-envelope','scene-family-yoshida-counter','scene-family-kurose-lobby',...conversations]){
    assert.ok(g.run(`chapterArt('${scene}').includes('data-motion-key="${scene}"')`),'new scene uses the existing motion host');
    for(const variant of ['mobile','desktop']){
     const entry=manifest.find(e=>e.scene===scene&&e.variant===variant);

@@ -1,26 +1,24 @@
 {
   "paper-effect-discovered": {
     "kind": "compare",
-    "label": "控えと照会画面",
-    "paperLabel": "交付前の控え",
-    "screenLabel": "現在の照会",
+    "label": "同じ世帯の、家族の名前と続柄",
+    "paperLabel": "先週の紙の控え",
+    "screenLabel": "今日の照会",
     "rows": [
       {
-        "label": "氏名",
-        "paper": "覆われている",
-        "screen": "覆われている",
-        "masked": true
+        "label": "世帯主",
+        "paper": "水沢 朋子",
+        "screen": "水沢 朋子"
+      },
+      {
+        "label": "家族の氏名",
+        "paper": "水沢 里奈",
+        "screen": "水沢 誠"
       },
       {
         "label": "世帯主との続柄",
         "paper": "子",
         "screen": "夫"
-      },
-      {
-        "label": "住所",
-        "paper": "覆われている",
-        "screen": "覆われている",
-        "masked": true
       }
     ]
   },
