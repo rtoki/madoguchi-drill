@@ -4,6 +4,26 @@
 const {runSuites}=require('./test-tools.cjs');
 
 runSuites({
+ 'town-hall': function(require){
+  const {boot,assert}=require('./test-harness.cjs');const g=boot({width:390});
+  g.run('S=Object.assign(fresh(),{scr:"play",queue:[0],beats:[{t:"ask",si:0}],done:true});render();');
+  const before=g.run('JSON.stringify([S.bi,S.score,S.total,storyTime()])');
+  g.run('openMaterial("directory");');assert.equal(g.run('S.win'),'directory');
+  assert.ok(g.stage.innerHTML.includes('id="townHallViewport"'));assert.ok(g.stage.innerHTML.includes('相談ブース'));
+  g.run('townHallEnlarged=true;render();');assert.ok(g.stage.innerHTML.includes('town-hall-image is-enlarged'));
+  g.fire('keydown',{key:'Escape',preventDefault(){}});assert.equal(g.run('S.win'),null);
+  assert.equal(g.run('JSON.stringify([S.bi,S.score,S.total,storyTime()])'),before);
+  g.run('startChapter();S.chapter.entrance=null;openConsolePanel("chapter-menu");');
+  assert.ok(g.stage.innerHTML.includes('data-act="town-hall"'));
+  const chapter=g.run('JSON.stringify(S.chapter)');
+  g.run('openConsolePanel("town-hall");');assert.equal(g.run('S.panel'),'town-hall');
+  assert.ok(g.stage.innerHTML.includes('id="townHallViewport"'));
+  g.fire('keydown',{key:'Escape',preventDefault(){}});assert.equal(g.run('S.panel'),'chapter-menu');
+  g.run('closeConsolePanel();');assert.equal(g.run('S.panel'),null);assert.equal(g.run('JSON.stringify(S.chapter)'),chapter);
+  g.run('delete SCENARIO.content.TOWN_HALL;');assert.equal(g.run('townHallMenuHTML()'),'');
+  assert.ok(!g.run('materials().some(m=>m.key==="directory")'));
+  console.log('PASS directory zoom, close and menu return in both modes, unchanged progress and optional pack fallback.');
+ },
  'reduced-motion-screen': function(require){
   const {boot,assert}=require('./test-harness.cjs');
   for(const reducedMotion of [true,false]){
@@ -145,7 +165,9 @@ runSuites({
   click('material-view-move',{d:'1'});assert.equal(g.run('S.win'),'form');
   click('material-view-move',{d:'1'});assert.equal(g.run('S.panel'),'ref');assert.equal(g.run('S.flowFrom'),'material');
   assert.ok(g.run('flowPanelHTML()').includes('data-act="material-view-move"'));
-  click('material-view-move',{d:'1'});assert.equal(g.run('S.materialKey'),'guide','no wrap at the end');
+  click('material-view-move',{d:'1'});assert.equal(g.run('S.win'),'directory');
+  click('material-view-move',{d:'1'});assert.equal(g.run('S.materialKey'),'directory','no wrap at the end');
+  click('material-view-move',{d:'-1'});assert.equal(g.run('S.panel'),'ref');
   click('flow-close');assert.equal(g.run('S.panel'),null,'close returns to response, not another picker');
   click('desk',{group:'work'});assert.equal(g.run('S.panel'),'ref','remember the work item separately');
   click('material-view-move',{d:'-1'});assert.equal(g.run('S.win'),'form');assert.equal(g.run('S.panel'),null);
@@ -197,7 +219,9 @@ runSuites({
   g.fire('click',{detail:1,target:{closest:()=>null},preventDefault(){stopped=true;},stopPropagation(){}});
   assert.ok(stopped);assert.equal(g.run('S.win'),'form');
   gesture();assert.equal(g.run('S.panel'),'ref');assert.equal(g.run('S.flowFrom'),'material');
-  gesture();assert.equal(g.run('S.materialKey'),'guide','swipes stop at the end of the work group');
+  gesture();assert.equal(g.run('S.materialKey'),'directory');
+  gesture();assert.equal(g.run('S.materialKey'),'directory','swipes stop at the end of the work group');
+  gesture({dx:120});assert.equal(g.run('S.panel'),'ref');
   gesture({dx:120});assert.equal(g.run('S.win'),'form');assert.equal(g.run('S.panel'),null);
   gesture({dx:120});assert.equal(g.run('S.win'),'term');
   gesture({dx:120});assert.equal(g.run('S.win'),'term','no wrap at the start');

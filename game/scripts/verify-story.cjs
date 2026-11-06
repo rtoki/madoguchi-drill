@@ -269,8 +269,13 @@ runSuites({
   assert.equal(g.run('CHAPTER_BLOCKS.length'),3);
   assert.equal(g.run('Object.keys(MYSTERY_PUZZLES).length'),3);
   assert.ok(g.run('CHAPTER_NODES.filter(n=>!n.training).reduce((sum,n)=>sum+chapterPages(n).reduce((s,p)=>s+p.text.length,0),0)')>=12600,'expanded prose must not revert to the short edition');
-  assert.equal(g.run('new Set(CHAPTER_NODES.flatMap(n=>chapterPages(n)).map(p=>p.scene).filter(s=>s.startsWith("scene-family-"))).size'),30);
+  assert.equal(g.run('new Set(CHAPTER_NODES.flatMap(n=>chapterPages(n)).map(p=>p.scene).filter(s=>s.startsWith("scene-family-"))).size'),34);
   assert.equal(g.run('CHAPTER_NODES.flatMap(n=>n.pages()).flatMap(p=>p.clues||[]).length'),19,'each clue is published on exactly one page');
+  for(const [node,key,scene] of [['r0','paper-photo-count','scene-family-paper-photo'],['memo','paper-extension-name','scene-family-extension-phone'],['noon','paper-cloth-received','scene-family-cloth-lobby'],['noon','paper-cloth-owner','scene-family-borrowed-cloth'],['safety','paper-photo-return','scene-family-paper-photo']]){
+   const page=g.run(`chapterPages(chapterNode(${JSON.stringify(node)})).find(p=>p.key===${JSON.stringify(key)})`);
+   assert.equal(page.scene,scene);assert.equal((page.clues||[]).length,0,'uncanny scenes do not add deduction requirements');
+  }
+
   assert.equal(g.run('chapterPages(chapterNode("safety")).find(p=>p.key==="paper-two-daughters").scene'),'scene-family-daughter-document-late');
   assert.ok(g.run('CHAPTER_NODES.flatMap(n=>chapterPages(n)).filter(p=>p.time>="17:30").every(p=>p.scene!=="mentor-scene")'),'late story pages never reuse the sunlit normal-mode mentor');
   for(const id of g.run('Object.keys(PHOTO_ASSETS).filter(id=>id.startsWith("scene-family-"))')){

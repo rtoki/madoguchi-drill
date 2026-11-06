@@ -2,7 +2,7 @@
 
 自治体の「書かない窓口」を題材にした、ブラウザーで遊べる窓口応対ゲームです。新人職員として、来庁者の話を聞き、書類と申請内容を確かめます。
 
-**[ブラウザーで遊ぶ](https://madoguchi-drill.pages.dev/)** · **v1.0.1** · 個人開発：[tocky8bit](https://github.com/rtoki)
+**[ブラウザーで遊ぶ](https://madoguchi-drill.pages.dev/)** · **v1.0.2** · 個人開発：[tocky8bit](https://github.com/rtoki)
 
 ![証明書窓口ドリルのタイトル画面](docs/screenshots/title.jpg)
 
@@ -53,11 +53,11 @@ python3 scripts/build.py standalone --scenario starter
 | 音楽・人物動画の構成を確認 | [音楽](game/audio/README.md)・[人物動画](game/motion/README.md) |
 | 素材の利用条件を確認 | [適用範囲とクレジット例](LICENSING.md) |
 
-共通処理は `game/engine/` にまとめています。文章送りは `game-reader.ts`、物語表示と保存は `family-reader.ts`、窓口処理は `counter-script.ts`、型定義は `contracts.d.ts` が編集先です。作品ごとの本文・設定は `game/scenarios/`、ビルド・検証は `game/scripts/` にあります。生成物を直接編集せず、正本を直して再ビルドしてください。原稿や設定には結末を含みます。
+共通処理は `game/engine/` にまとめています。文章送りは `game-reader.ts`、物語表示と保存は `family-reader.ts`、窓口処理は `counter-script.ts`、型定義は `contracts.d.ts` が編集先です。作品ごとの本文・設定は `game/scenarios/`、ビルド・検証は `game/scripts/` にあります。生成物を直接編集せず、正本を直して再ビルドしてください。原稿や設定には結末を含みます。 原作の庁舎の位置関係は[こもれび町役場の庁内案内](docs/TOWN-HALL.html)を参照してください。ゲーム内では通常モードの「業務資料」、ストーリーモードのメニューから案内図を開けます。
 
 原作の本文・時刻を変更した場合は、通常ビルドの前に `python3 scripts/build.py manuscript` を実行します。公開前の検証手順は [作業ガイドの「ビルドと検証」](AGENTS.md#ビルドと検証)を参照してください。スマホ幅やNodeでの検証は、実機iPhone・Safariでの音声・動画再生確認とは区別します。
 
-原作は **v1.0.1**、共通エンジン・starterは **v1.0.0**。版の正本は `game/engine/version.json` と各作品の `manifest.json` です。配信時は同じビルドの `_headers` を含めてください。拡張コードを含むシナリオパックは、信頼できる作者のものをレビューして組み込む前提で、隔離実行する仕組みではありません。
+原作は **v1.0.2**、共通エンジンは **v1.1.0**、starterは **v1.0.0**。版の正本は `game/engine/version.json` と各作品の `manifest.json` です。配信時は同じビルドの `_headers` を含めてください。拡張コードを含むシナリオパックは、信頼できる作者のものをレビューして組み込む前提で、隔離実行する仕組みではありません。
 
 ## ご意見・貢献について
 

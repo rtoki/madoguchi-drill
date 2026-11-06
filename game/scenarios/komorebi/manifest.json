@@ -67,10 +67,10 @@
     ]
   },
   "allowLegacySave": true,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scriptVersion": 1,
   "requiresEngine": {
-    "minVersion": "1.0.0",
+    "minVersion": "1.1.0",
     "maxVersionExclusive": "2.0.0"
   },
   "moments": "moments.json"

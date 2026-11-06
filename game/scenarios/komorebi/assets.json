@@ -323,10 +323,10 @@
     "changes": "AI lighting edit for story time continuity; original composition and fictional character identity retained.",
     "provenance": "Original AI-generated fictional art, relit using image generation."
   },
-  "fc0b14ae53964809": {
+  "4e081aae19c1afa5": {
     "file": "../../images/scene-family-empty-desk.webp",
     "mime": "image/webp",
-    "sha256": "fc0b14ae539648096dcf98dd18117e4016f998cf4caefe9e1c7962784e079c4e",
+    "sha256": "4e081aae19c1afa57210063c8a34c8b18c146c9a5808b20dfb4d03e9ac0132b6",
     "license": "CC-BY-4.0",
     "creator": "rtoki"
   },
@@ -397,22 +397,22 @@
     "changes": "AI lighting edit for story time continuity; original composition and fictional character identity retained.",
     "provenance": "Original AI-generated fictional art, relit using image generation."
   },
-  "af43f3849566c84b": {
+  "e7dd6f35dd17da1c": {
     "file": "../../images/scene-family-daughter-talk.webp",
     "mime": "image/webp",
-    "sha256": "64b18d7aa4b79728f8d389fe6c1dc88864179ff3a519041e3915f12ab48e8623",
+    "sha256": "e7dd6f35dd17da1c16a4a3388c26d038b4bd895780844e5923d77b2e36b0e2b1",
     "license": "CC-BY-4.0",
     "creator": "rtoki",
-    "changes": "AI lighting edit for story time continuity; original composition and fictional character identity retained.",
+    "changes": "Aligned fictional lobby and consultation booth with the town hall directory.",
     "provenance": "Original AI-generated fictional art, relit using image generation."
   },
-  "9c1f25d05fe1acc1": {
+  "f702df3a6e1d1320": {
     "file": "../../images/scene-family-daughter-waiting.webp",
     "mime": "image/webp",
-    "sha256": "9ee02891068abb6d772a6825928ed03c05c0314bec9bfd33e38910312dbc3bba",
+    "sha256": "f702df3a6e1d1320ac20c982a129cd8a14a931f822c1716bb4177729771aa44c",
     "license": "CC-BY-4.0",
     "creator": "rtoki",
-    "changes": "AI lighting edit for story time continuity; original composition and fictional character identity retained.",
+    "changes": "Aligned fictional lobby and consultation booth with the town hall directory.",
     "provenance": "Original AI-generated fictional art, relit using image generation."
   },
   "2ae98217ecca648c": {
@@ -452,13 +452,13 @@
     "changes": "AI lighting edit for story time continuity; original composition and fictional character identity retained.",
     "provenance": "Original AI-generated fictional art, relit using image generation."
   },
-  "8738b9c430b5dcc2": {
+  "2b4d3db291787f10": {
     "file": "../../images/scene-family-empty-consultation.webp",
     "mime": "image/webp",
-    "sha256": "ee660eb448a550264fa47b43763595ffa86dc2f9c903f57720c76bbdf287950d",
+    "sha256": "2b4d3db291787f10f7d9a4f4de8c779a15a7c2f2c164e0738740e64d7592378b",
     "license": "CC-BY-4.0",
     "creator": "rtoki",
-    "changes": "AI lighting edit for story time continuity; original composition and fictional character identity retained.",
+    "changes": "Aligned fictional lobby and consultation booth with the town hall directory.",
     "provenance": "Original AI-generated fictional art, relit using image generation."
   },
   "3f9b55e23db50539": {
@@ -1375,40 +1375,40 @@
     "changes": "Re-rendered from time-of-day-corrected fictional artwork; 8-second silent motion retained.",
     "provenance": "LivePortrait/procedural animation of original AI-generated relit art; no InsightFace models."
   },
-  "3236cfd410c75919": {
+  "1807bccb543d779e": {
     "file": "../../motion/scene-family-daughter-talk-mobile.mp4",
     "mime": "video/mp4",
-    "sha256": "1ccf340cf82338817c76064db97aa6c11190f10cdde10f6f984c1054c1696140",
+    "sha256": "1807bccb543d779e1b2cf692c4764487522722594fa928ec9b031e9579b66938",
     "license": "CC-BY-4.0",
     "creator": "rtoki",
-    "changes": "Re-rendered from time-of-day-corrected fictional artwork; 8-second silent motion retained.",
+    "changes": "Aligned fictional lobby and consultation booth with the town hall directory.",
     "provenance": "LivePortrait/procedural animation of original AI-generated relit art; no InsightFace models."
   },
-  "09830c2d346f3bc9": {
+  "0e91cf2c9c97f8a0": {
     "file": "../../motion/scene-family-daughter-talk-desktop.mp4",
     "mime": "video/mp4",
-    "sha256": "ebc6fe101f0af0449417eb97f5642aa572153f9657a23f74c98d8a2cdb8e4d89",
+    "sha256": "0e91cf2c9c97f8a0696bd0ae551423a7f2aec16d558192ff77e2c2f7636838fb",
     "license": "CC-BY-4.0",
     "creator": "rtoki",
-    "changes": "Re-rendered from time-of-day-corrected fictional artwork; 8-second silent motion retained.",
+    "changes": "Aligned fictional lobby and consultation booth with the town hall directory.",
     "provenance": "LivePortrait/procedural animation of original AI-generated relit art; no InsightFace models."
   },
-  "92be6f3e382b9d7b": {
+  "025cc126019351a2": {
     "file": "../../motion/scene-family-daughter-waiting-mobile.mp4",
     "mime": "video/mp4",
-    "sha256": "a7222b55bac7a829d6e4d0d594d8150bf58de121da7f85f4bd28b9c11d2f627e",
+    "sha256": "025cc126019351a2d4e72d71331e9afc18b902fb67cfd20c5910f28f175a2d16",
     "license": "CC-BY-4.0",
     "creator": "rtoki",
-    "changes": "Re-rendered from time-of-day-corrected fictional artwork; 8-second silent motion retained.",
+    "changes": "Aligned fictional lobby and consultation booth with the town hall directory.",
     "provenance": "LivePortrait/procedural animation of original AI-generated relit art; no InsightFace models."
   },
-  "80b1675a8a71d3a7": {
+  "fb81dbaf4367c45a": {
     "file": "../../motion/scene-family-daughter-waiting-desktop.mp4",
     "mime": "video/mp4",
-    "sha256": "a533ea89f1aef0390150d30adadbd25973a68ddf99ada7729b744ecf5db7e0ec",
+    "sha256": "fb81dbaf4367c45a2799220f1bec75dce7029d601fb989f0b94127341f889729",
     "license": "CC-BY-4.0",
     "creator": "rtoki",
-    "changes": "Re-rendered from time-of-day-corrected fictional artwork; 8-second silent motion retained.",
+    "changes": "Aligned fictional lobby and consultation booth with the town hall directory.",
     "provenance": "LivePortrait/procedural animation of original AI-generated relit art; no InsightFace models."
   },
   "382a5b8287bea6de": {
@@ -1608,10 +1608,10 @@
     "license": "CC-BY-4.0",
     "creator": "rtoki"
   },
-  "4d904cb6c5ed4480": {
+  "07b8f07b924492b2": {
     "file": "../../images/scene-family-evening-counter.webp",
     "mime": "image/webp",
-    "sha256": "4d904cb6c5ed44805299658268637245e0569b7eaf12fd77a6ac752872189b6a",
+    "sha256": "07b8f07b924492b2697dbd1f8a617ae38c2ad97add5d108fd79746fe6d8a3a17",
     "license": "CC-BY-4.0",
     "creator": "rtoki"
   },
@@ -1705,22 +1705,22 @@
     "changes": "AI lighting edit for late-afternoon or evening story scene.",
     "provenance": "Original AI-generated fictional art, relit using image generation."
   },
-  "bbb521df39007c79": {
+  "841bef37bad4dcab": {
     "file": "../../images/scene-family-daughter-talk.png",
     "mime": "image/png",
-    "sha256": "bbb521df39007c79ab7e0e631a3dbde2ab51b1723927332c01a498e650c553ff",
+    "sha256": "841bef37bad4dcabbb4fe3da1df184065a05c13761bdee085bddd7ae3077496e",
     "license": "CC-BY-4.0",
     "creator": "rtoki",
-    "changes": "AI lighting edit for late-afternoon or evening story scene.",
+    "changes": "Aligned fictional lobby and consultation booth with the town hall directory.",
     "provenance": "Original AI-generated fictional art, relit using image generation."
   },
-  "3da47a8ea8c62126": {
+  "bb591228e1d768f7": {
     "file": "../../images/scene-family-daughter-waiting.png",
     "mime": "image/png",
-    "sha256": "3da47a8ea8c621266329fd506a077d60d330ce0ee94cc24402fcedb0a8f559ab",
+    "sha256": "bb591228e1d768f712e0d670258e8a27e68b0b3c873b139c37c10cd637555f00",
     "license": "CC-BY-4.0",
     "creator": "rtoki",
-    "changes": "AI lighting edit for late-afternoon or evening story scene.",
+    "changes": "Aligned fictional lobby and consultation booth with the town hall directory.",
     "provenance": "Original AI-generated fictional art, relit using image generation."
   },
   "a3699bd8c95a30e6": {
@@ -1759,13 +1759,13 @@
     "changes": "AI lighting edit for late-afternoon or evening story scene.",
     "provenance": "Original AI-generated fictional art, relit using image generation."
   },
-  "42653a2a02813258": {
+  "f03cb6ca4275eb61": {
     "file": "../../images/scene-family-empty-consultation.png",
     "mime": "image/png",
-    "sha256": "42653a2a028132582f2906f333ae435459ecce97d3778d5b9e9bb6d3aef1d4a6",
+    "sha256": "f03cb6ca4275eb61abefd774323509ec660873935fcdb4b6c7f509c29f146895",
     "license": "CC-BY-4.0",
     "creator": "rtoki",
-    "changes": "AI lighting edit for late-afternoon or evening story scene.",
+    "changes": "Aligned fictional lobby and consultation booth with the town hall directory.",
     "provenance": "Original AI-generated fictional art, relit using image generation."
   },
   "9f0235ec3be8d087": {
@@ -1839,5 +1839,50 @@
     "creator": "rtoki",
     "changes": "Evening-only variant rendered from relit fictional artwork; 8-second silent motion.",
     "provenance": "LivePortrait animation of original AI-generated art; no InsightFace models."
+  },
+  "649a03fef8cecab6": {
+    "file": "../../images/scene-family-paper-photo.webp",
+    "mime": "image/webp",
+    "sha256": "649a03fef8cecab6516b044fbefc963af93acf889c3f66312fdcdf640476e7da",
+    "license": "CC-BY-4.0",
+    "creator": "rtoki",
+    "changes": "Original fictional story scene.",
+    "provenance": "Original AI-generated fictional art using image generation."
+  },
+  "8b4b447822b2d835": {
+    "file": "../../images/scene-family-extension-phone.webp",
+    "mime": "image/webp",
+    "sha256": "8b4b447822b2d835ac23e2a6b9134aee8abc6a09f6e5b6f7c8cf609877dc87a7",
+    "license": "CC-BY-4.0",
+    "creator": "rtoki",
+    "changes": "Original fictional story scene.",
+    "provenance": "Original AI-generated fictional art using image generation."
+  },
+  "49c8c3f0baf4caf4": {
+    "file": "../../images/scene-family-borrowed-cloth.webp",
+    "mime": "image/webp",
+    "sha256": "49c8c3f0baf4caf47e1bbcda0669ce5ebd62a8570427106fa473991c979fbe9b",
+    "license": "CC-BY-4.0",
+    "creator": "rtoki",
+    "changes": "Original fictional story scene.",
+    "provenance": "Original AI-generated fictional art using image generation."
+  },
+  "c86acabe653fe615": {
+    "file": "../../images/town-hall-directory.png",
+    "mime": "image/png",
+    "sha256": "c86acabe653fe615bbce979c515e6bd0d86036ffec56115b33ec1daf73d3b1f3",
+    "creator": "rtoki",
+    "license": "CC-BY-4.0",
+    "provenance": "Original AI-generated fictional municipal directory.",
+    "changes": "Consultation booth label and fictional floor layout."
+  },
+  "c9dd0afffda81cca": {
+    "file": "../../images/scene-family-cloth-lobby.webp",
+    "mime": "image/webp",
+    "sha256": "c9dd0afffda81ccad7b6b8276658762433fbb564b15edf6a02ec3c83e5355f17",
+    "license": "CC-BY-4.0",
+    "creator": "rtoki",
+    "provenance": "Original AI-generated fictional art.",
+    "changes": "Public lobby handkerchief scene, distinct from later staff-desk still."
   }
 }

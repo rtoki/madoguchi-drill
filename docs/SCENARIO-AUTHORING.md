@@ -192,3 +192,5 @@ python3 scripts/verify.py ScenarioCompilerTests
 ## 対応エンジンと作品の版
 
 初版の共通エンジン・原作・starterはすべて **v1.0.0** です。現在値の正本は `engine/version.json` と各作品の `manifest.json` です。`manifest.version` は作品自体の版、`requiresEngine` は対応するエンジンの範囲です。`schemaVersion` と `scriptVersion` はともに1。版の決め方と更新時の保存互換性は [AI向け作業ガイド](../AGENTS.md)を参照してください。
+
+庁内案内を収録する場合は、原作の `content.TOWN_HALL`（見出し・画像の代替説明・階別の説明）と `styles.json` の `town-hall-directory` を参照してください。画像は通常の素材台帳へ登録します。未設定の作品では入口を表示しません。この共通ビューアはエンジンv1.1.0以降で使えます。

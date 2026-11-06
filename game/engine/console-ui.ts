@@ -50,7 +50,7 @@ function closeConsolePanel(){
  requestAnimationFrame(()=>document.querySelector<HTMLElement>(S.panel?'.panel #p-close':closing==='timeline'?'[data-act="clock-timeline"]':closing==='desk'?`[data-act="desk"][data-group="${S.materialLibraryGroup||'work'}"]`:S.scr==='title'?'[data-act="settings"]':S.scr==='multi'?'[data-act="chapter-menu"]':'[data-act="menu"]')?.focus({preventScroll:true}));
 }
 function handleConsolePanelKey(e: KeyboardEvent){
- if(!['settings','menu','chapter-menu','desk','request','sound','about','log','timeline','chapter-notes'].includes(S.panel||''))return false;
+ if(!['settings','menu','chapter-menu','desk','request','sound','about','log','timeline','chapter-notes','town-hall'].includes(S.panel||''))return false;
  if(e.key==='Escape'){e.preventDefault();closeConsolePanel();return true;}
  if(S.panel==='settings'&&e.target instanceof Element&&e.target.closest('.settings-tabs')&&['ArrowLeft','ArrowRight','Home','End'].includes(e.key)){
   e.preventDefault();selectSettingsTab(e.key==='Home'?'display':e.key==='End'?'sound':S.settingsTab==='sound'?'display':'sound');return true;
@@ -127,7 +127,7 @@ document.addEventListener('touchstart',e=>{
  if(e.touches.length!==1)return;
  const key=materialSwipeContext(),target=e.target;if(!(target instanceof Element))return;
  const surface=target.closest?.(S.panel==='ref'?'.flow-panel':S.zoom!==null?'#zoom':'#win');
- if(!key||!surface||target.closest?.('button,a,input,select,textarea,label,summary,[contenteditable]:not([contenteditable="false"]),#flowViewport,.flow-tabs,[role="slider"]'))return;
+ if(!key||!surface||target.closest?.('button,a,input,select,textarea,label,summary,[contenteditable]:not([contenteditable="false"]),#flowViewport,.town-hall-viewport,.flow-tabs,[role="slider"]'))return;
  const t=e.touches[0];if(!t)return;
  materialSwipe={key,surface,id:t.identifier,x:t.clientX,y:t.clientY,started:Date.now(),horizontal:false};
 },{passive:true});
