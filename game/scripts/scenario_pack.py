@@ -473,6 +473,11 @@ def validate(pack):
     all_keys = set()
     decisions, clues, puzzles = [story.get(key, {}) for key in ('decisions', 'clues', 'puzzles')]
     photos = pack['content']['PHOTO_ASSETS']
+    directory = pack['content'].get('TOWN_HALL')
+    if directory is not None:
+        require(isinstance(directory, dict), 'TOWN_HALLはオブジェクトで指定してください')
+        require(all(isinstance(directory.get(k), str) and directory[k].strip() for k in ('title', 'alt')), 'TOWN_HALLのtitle・altが必要です')
+        require(isinstance(directory.get('floors'), list) and directory['floors'] and all(isinstance(row, list) and len(row) == 2 and all(isinstance(v, str) and v.strip() for v in row) for row in directory['floors']), 'TOWN_HALLのfloorsは階名と説明の組で指定してください')
     choices = {}
     for key in [*decisions, *clues, *puzzles, *story.get('bad_endings', {})]:
         safe_id(key)

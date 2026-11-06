@@ -336,7 +336,7 @@ interface ClockTimelineReturn {
  time: string;
  reading: ReadbackPosition | null;
 }
-interface MaterialItem {key: string; label: string; status: string; kind: 'pc' | 'doc' | 'form' | 'hand' | 'guide'; i?: number;}
+interface MaterialItem {key: string; label: string; status: string; kind: 'pc' | 'doc' | 'form' | 'hand' | 'guide' | 'directory'; i?: number;}
 interface MaterialSwipe {key: string; surface: Element; id: number; x: number; y: number; started: number; horizontal: boolean;}
 interface SettingsView {
  tab?: string;

@@ -495,12 +495,12 @@ function winHTML(){
   if (!S.win || S.scr!=="play") return "";
   const c=curCase(); if (!c) return "";
   if(S.win==="term")return pcWindowHTML();
-  return `<div class="material-backdrop noadv" aria-hidden="true"></div><div class="win open ${S.win==='term'?'pc-window':''} ${FX.win?"pop":""} noadv" id="win" role="dialog" aria-modal="true" aria-label="資料の詳細" aria-describedby="winDismissHint">
+  return `<div class="material-backdrop noadv" aria-hidden="true"></div><div class="win open ${S.win==='term'?'pc-window':S.win==='directory'?'directory-window':''} ${FX.win?"pop":""} noadv" id="win" role="dialog" aria-modal="true" aria-label="資料の詳細" aria-describedby="winDismissHint">
     <div class="win-tabs material-view-header">${workMaterialNavigationHTML()}
       <button type="button" class="x" id="win-x" data-act="winx" aria-label="閉じる">×</button>
     </div>
-    <div class="win-body">${S.win==="term"?termHTML():S.win==="hand"&&HANDOUT[c.id]?handoutHTML():formHTML()}</div>
-    <p class="material-dismiss-hint" id="winDismissHint">${S.win==='term'?'背景・×・Escで会話へ戻る · 入力内容は保持':'資料・背景をクリック／タップで戻る · Esc'}</p>
+    <div class="win-body">${S.win==="directory"?townHallBodyHTML():S.win==="term"?termHTML():S.win==="hand"&&HANDOUT[c.id]?handoutHTML():formHTML()}</div>
+    <p class="material-dismiss-hint" id="winDismissHint">${S.win==='term'?'背景・×・Escで会話へ戻る · 入力内容は保持':S.win==='directory'?'×・Escで会話へ戻る':'資料・背景をクリック／タップで戻る · Esc'}</p>
   </div>`;
 }
 
@@ -521,7 +521,7 @@ function deskControls(){
   return `<p class="panel-intro">必要な資料を選んで、内容を確認できます。</p><div class="desk-layout"><section class="desk-pc"><h4>職員用PC</h4>${staffPcHTML()}</section><section><h4>提示された書類</h4><div class="desk-docs">${S.docs?c.visitor.docs.map((d,i)=>docHTML(d,i)).join(''):'<p class="empty-note">まだ提示されていません。</p>'}</div></section></div><div class="desk-actions"><button type="button" class="btn" data-act="tab" data-v="form">申請書を開く</button>${S.handout?'<button type="button" class="btn" data-act="tab" data-v="hand">お渡しする用紙</button>':''}</div>`;
 }
 function gameMenu(){
- return `<p class="pause-context">${esc(curCase().visitor.name)} · ${storyTime()}</p><div class="game-menu">${S.chapter?'<button type="button" data-act="chapter-map">タイムライン</button>':''}<button type="button" data-act="log">会話ログ</button><button type="button" data-act="request">用件・人物</button><button type="button" data-act="ref">フロー早見</button><button type="button" data-act="tips">寄り道ノート</button><button type="button" data-act="skip">次の判断まで進む</button>${GAME_READER.controls()}<button type="button" data-act="settings">設定</button><button type="button" data-act="totitle">${S.confirmTitle?'タイトルへ戻る（確定）':'タイトルへ戻る'}</button></div>${S.mode==='normal'?`<p class="pause-score">${S.score}点 · お待たせ +${S.wait}分 · 重大な誤り ${S.inc}</p>`:''}`;
+ return `<p class="pause-context">${esc(curCase().visitor.name)} · ${storyTime()}</p><div class="game-menu">${S.chapter?'<button type="button" data-act="chapter-map">タイムライン</button>':''}<button type="button" data-act="log">会話ログ</button><button type="button" data-act="request">用件・人物</button><button type="button" data-act="ref">フロー早見</button><button type="button" data-act="tips">寄り道ノート</button>${townHallMenuHTML()}<button type="button" data-act="skip">次の判断まで進む</button>${GAME_READER.controls()}<button type="button" data-act="settings">設定</button><button type="button" data-act="totitle">${S.confirmTitle?'タイトルへ戻る（確定）':'タイトルへ戻る'}</button></div>${S.mode==='normal'?`<p class="pause-score">${S.score}点 · お待たせ +${S.wait}分 · 重大な誤り ${S.inc}</p>`:''}`;
 }
 
 /* Original fictional vignettes. These add character, never eligibility or judging rules. */
@@ -603,6 +603,8 @@ function handleMaterialClick(e){
   const rect=surface.getBoundingClientRect?.();
   if(!rect||e.target!==surface||e.clientX>=rect.left&&e.clientX<=rect.right&&e.clientY>=rect.top&&e.clientY<=rect.bottom)return false;
  }
+ // The directory is panned and zoomed, rather than dismissed by tapping the map.
+ if(surface&&S.win==='directory'&&e.target.closest('.win-body'))return false;
  // Tabs, document navigation and explicit close controls retain their own actions.
  if(surface&&e.target.closest('button,a,input,select,textarea,label,[contenteditable="true"]'))return false;
  e.preventDefault();e.stopPropagation();
@@ -620,6 +622,12 @@ document.addEventListener('pointercancel',()=>{if(materialGesture)materialGestur
 document.addEventListener('scroll',e=>{
  if(materialGesture&&materialIsOpen()&&e.target.closest?.('#zoom,#win'))materialGesture.moved=true;
 },true);
+let townHallEnlarged=false;
+function townHallBodyHTML(){
+ const guide=SCENARIO.content.TOWN_HALL;if(!guide)return '';
+ return `${S.win==='directory'?'<h3>庁内案内</h3>':''}<div class="town-hall-toolbar"><button type="button" class="btn" data-act="town-hall-zoom" aria-pressed="${townHallEnlarged}" aria-controls="townHallViewport">${townHallEnlarged?'全体を表示':'拡大する'}</button></div><div id="townHallViewport" class="town-hall-viewport" tabindex="0" role="region" aria-label="庁内案内図。拡大時は上下左右にスクロールできます"><div class="town-hall-image${townHallEnlarged?' is-enlarged':''}" role="img" aria-label="${esc(guide.alt)}"></div></div><p class="town-hall-help">拡大すると、上下左右にスクロールできます。</p><dl class="town-hall-floors">${guide.floors.map(([floor,text])=>`<div><dt>${esc(floor)}</dt><dd>${esc(text)}</dd></div>`).join('')}</dl><p class="town-hall-help">ゲーム内の架空の庁舎です。</p>`;
+}
+function townHallMenuHTML(){return SCENARIO.content.TOWN_HALL?'<button type="button" data-act="town-hall">庁内案内</button>':'';}
 function materials(){
  const c=curCase();if(!c)return [];
  const formState=['未作成','転記済み','署名済み','審査済み'][S.fstage]||'未作成';
@@ -627,13 +635,15 @@ function materials(){
    ...(S.docs?c.visitor.docs.map((label,i)=>({key:'doc:'+i,label,status:'提示された書類',kind:'doc',i})):[]),
    {key:'form',label:'証明交付申請書',status:formState,kind:'form'},
    ...(S.handout?[{key:'hand',label:HANDOUT[c.id]?.tab||'お渡しする用紙',status:'持ち帰り用',kind:'hand'}]:[]),
-   {key:'guide',label:'新人のあんちょこ',status:currentFlowRef()?`フロー早見 · ${currentFlowRef()}`:'フロー早見 · 手続き別',kind:'guide'}];
+   {key:'guide',label:'新人のあんちょこ',status:currentFlowRef()?`フロー早見 · ${currentFlowRef()}`:'フロー早見 · 手続き別',kind:'guide'},
+   ...(SCENARIO.content.TOWN_HALL?[{key:'directory',label:'庁内案内',status:'庁舎の配置・受付案内',kind:'directory'}]:[])];
 }
 function selectedMaterial(){
  const list=materials();let i=list.findIndex(v=>v.key===S.materialKey);if(i<0)i=0;
  return {list,i,item:list[i]};
 }
 function materialPicture(item){
+ if(item.kind==='directory')return '<span class="town-hall-image town-hall-thumbnail" aria-hidden="true"></span>';
  if(item.kind==='guide')return `<span class="material-guide"><span class="guide-tab">確認</span><small>窓口の手引き</small><b>新人の<br>あんちょこ</b><svg viewBox="0 0 92 40" aria-hidden="true"><path d="M16 20H76M38 16L42 20L38 24M65 16L69 20L65 24" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="2" y="9" width="27" height="22" rx="2"/><rect x="43" y="9" width="19" height="22" rx="2"/><rect x="71" y="9" width="19" height="22" rx="2"/></svg><em>フロー早見</em></span>`;
  if(item.kind==='pc'){const html=staffPcHTML();return `<span class="staff-pc">${html.slice(html.indexOf('>')+1,html.lastIndexOf('</button>'))}</span>`;}
  if(item.kind==='doc'){
@@ -673,7 +683,7 @@ function activateMaterial(key){
 }
 function openMaterial(key){
  const {list}=selectedMaterial(),m=list.find(v=>v.key===(key||S.materialKey))||list[0];if(!m)return;
- S.materialReturn=null;S.materialLibraryGroup=m.kind==='doc'?'presented':'work';rememberMaterial(m.key);
+ townHallEnlarged=false;S.materialReturn=null;S.materialLibraryGroup=m.kind==='doc'?'presented':'work';rememberMaterial(m.key);
  S.materialKey=m.key;S.panel=null;S.win=null;S.zoom=null;materialGesture=null;SOUND.sfx('paper');
  if(m.kind==='guide'){openFlow('material');return;}
  if(m.kind==='doc')S.zoom=m.i;else S.win=m.key;
@@ -1135,7 +1145,7 @@ function compactHudHTML(){
 }
 function chapterMenuHTML(){
  const n=chapterNode(S.chapter.node),c=S.chapter;
- return `<p class="pause-context">${n?esc(n.title):'ストーリーモード'}${c.view==='read'?' · '+pacingPageNumber(n):''}</p><div class="chapter-pause-menu">${c.view!=='timeline'?'<button type="button" data-act="chapter-map">タイムライン</button>':''}<button type="button" data-act="mystery-notes">手掛かり</button>${familyResumeHTML()}${familyLicenseAvailable()?'<button type="button" data-act="family-license">免許証</button>':''}${GAME_READER.controls()}<button type="button" data-act="settings">設定</button><button type="button" data-act="totitle">${S.confirmTitle?'タイトルへ戻る（確定）':'タイトルへ戻る'}</button></div>`;
+ return `<p class="pause-context">${n?esc(n.title):'ストーリーモード'}${c.view==='read'?' · '+pacingPageNumber(n):''}</p><div class="chapter-pause-menu">${c.view!=='timeline'?'<button type="button" data-act="chapter-map">タイムライン</button>':''}<button type="button" data-act="mystery-notes">手掛かり</button>${familyResumeHTML()}${townHallMenuHTML()}${familyLicenseAvailable()?'<button type="button" data-act="family-license">免許証</button>':''}${GAME_READER.controls()}<button type="button" data-act="settings">設定</button><button type="button" data-act="totitle">${S.confirmTitle?'タイトルへ戻る（確定）':'タイトルへ戻る'}</button></div>`;
 }
 
 /* Training-only form workflow, using the current case's disclosed fictional data. */
@@ -1484,7 +1494,7 @@ function pacingTimelineHTML(){
 }
 
 function titleHTML(){
- return `<div class="ov title console-title noadv" data-title-motion="${TITLE_CINEMA.playing()?'on':'off'}">${TITLE_CINEMA.html()}<div class="console-title-tools">${quickSoundHTML()}<button type="button" class="console-title-settings" data-act="settings" aria-haspopup="dialog">設定</button></div><div class="tx"><div class="eyebrow">こもれび町・証明書窓口</div><h1>証明書窓口<br>ドリル</h1><p class="opening-line">一枚の証明書。<br>その向こうに、一人の暮らし。</p><div class="menu"><button type="button" class="mbtn main mode-entry" id="start" data-act="start">通常モード <span aria-hidden="true">›</span></button><button type="button" class="mbtn mode-entry" id="story-start" data-act="family-entry" aria-haspopup="dialog">ストーリーモード <span aria-hidden="true">›</span></button></div><div class="src"><span class="title-mado">芽室町のOSS <a href="https://github.com/Memuro-Town/MADO" target="_blank" rel="noopener noreferrer">MADO</a> の公開資料を参考に制作</span><span>非公式の研修用ゲーム · 人物・住所は架空です</span><span>個人開発：<a href="https://github.com/rtoki" target="_blank" rel="noopener noreferrer">tocky8bit</a> · 所属組織とは関係ありません</span></div></div></div>`;
+ return `<div class="ov title console-title noadv" data-title-motion="${TITLE_CINEMA.playing()?'on':'off'}">${TITLE_CINEMA.html()}<div class="console-title-tools">${quickSoundHTML()}<button type="button" class="console-title-settings" data-act="settings" aria-haspopup="dialog">設定</button></div><div class="tx"><div class="eyebrow">こもれび町・証明書窓口</div><h1>証明書窓口<br>ドリル</h1><p class="opening-line">一枚の証明書。<br>その向こうに、一人の暮らし。</p><div class="menu"><button type="button" class="mbtn main mode-entry" id="start" data-act="start">通常モード <span aria-hidden="true">›</span></button><button type="button" class="mbtn mode-entry" id="story-start" data-act="family-entry" aria-haspopup="dialog">ストーリーモード <span aria-hidden="true">›</span></button></div><div class="src"><span class="title-mado">芽室町のOSS <a href="https://github.com/Memuro-Town/MADO" target="_blank" rel="noopener noreferrer">MADO</a> の公開資料を参考に制作</span><span>非公式の研修用ゲーム · 人物・住所は架空です</span><span>個人開発：<a href="https://github.com/rtoki" target="_blank" rel="noopener noreferrer">tocky8bit</a> · 所属組織とは関係ありません</span><span class="title-repo"><a href="https://github.com/rtoki/madoguchi-drill" target="_blank" rel="noopener noreferrer">GitHub · ソースコード・ご意見</a></span></div></div></div>`;
 }
 function endHTML(){
   const pct=S.max?S.score/S.max:0; const [rank,msg]=rankOf(pct,S.inc);
@@ -1659,11 +1669,13 @@ function panelHTML(){
   else if(S.panel==="settings"){title="設定";body=gameSettingsHTML();}
   else if(S.panel==="chapter-notes"){title="手掛かり";body=mysteryNotebookHTML();}
   else if(S.panel==="chapter-menu"){title="メニュー";body=chapterMenuHTML();}
+  else if(S.panel==="town-hall"){title=SCENARIO.content.TOWN_HALL?.title||"庁内案内";body=townHallBodyHTML();}
   else if(S.panel==="family-entry"){title="ストーリーモード";body=familyEntryHTML();}
   else if(S.panel==="family-term"){title="死戦期呼吸（しせんきこきゅう）";body=familyTermExplanationHTML();}
   else if(S.panel==="menu"){title="メニュー";body=gameMenu();}
   else { title="このゲームについて"; body=`
     <p><strong>個人開発：<a href="https://github.com/rtoki" target="_blank" rel="noopener noreferrer">tocky8bit</a></strong></p>
+    <p><a href="https://github.com/rtoki/madoguchi-drill" target="_blank" rel="noopener noreferrer">GitHub：ソースコード・不具合報告・ご意見</a></p>
     <p>本作は tocky8bit が個人として開発・公開したゲームです。作者が所属する組織とは関係なく、その見解や方針を示すものではありません。</p>
     <p class="engine-version"><strong>ゲームエンジン v${esc(ENGINE.version)}</strong><br><small>シナリオ v${esc(SCENARIO.version)}</small></p>
     <p>北海道芽室町が OSS「MADO」の申請書作成パッケージ（form）の設計相談のために公開した、証明書窓口の業務フローをもとにした判断練習です。</p>
@@ -1870,6 +1882,8 @@ document.addEventListener("click", e=>{
     if(!["snd","audio-channel","audio-test"].includes(act)){SOUND.unlock();SOUND.sfx("select");}
     if (act!=="totitle") S.confirmTitle=false;
     switch(act){
+      case "town-hall": if(SCENARIO.content.TOWN_HALL){townHallEnlarged=false;openConsolePanel("town-hall");}break;
+      case "town-hall-zoom": townHallEnlarged=!townHallEnlarged;render();requestAnimationFrame(()=>document.querySelector('[data-act="town-hall-zoom"]')?.focus({preventScroll:true}));break;
       case "clock-timeline": openClockTimeline();break;
       case "clock-return": returnClockTimeline();break;
       case "chapter-begin": beginFamilyChapter();break;
