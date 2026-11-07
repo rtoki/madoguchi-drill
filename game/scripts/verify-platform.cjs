@@ -521,7 +521,7 @@ runSuites({
   assert.ok(g.stage.innerHTML.includes('href="https://github.com/rtoki"'));
   const title=g.run('titleHTML()');
   assert.ok(!title.includes('個人開発')&&!title.includes('所属組織'),'the title omits the personal-development disclaimer');
-  assert.ok(title.includes('https://github.com/Memuro-Town/MADO'),'the MADO source remains visible');
+  assert.ok(title.includes('href="https://github.com/Memuro-Town/MADO"'),'the MADO source remains visible');
   for(const mode of ['normal','story']){
    const welcome=g.run(`S.launchMode=${JSON.stringify(mode)};madoWelcomeHTML();`);
    const notice=welcome.indexOf('本作のストーリーはフィクションです。');
