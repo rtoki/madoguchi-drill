@@ -42,7 +42,7 @@ const SOUND = (()=>{
   const wantsMusic=()=>started&&S.sound&&foreground()&&allowed('music')&&requestedTrack()!==null&&levels.master>0&&levels.music>0;
   const musicPermitted=()=>started&&S.sound&&foreground()&&(solo?solo==='music':enabled.music)&&levels.master>0&&levels.music>0;
   function updateCue(){
-    if(S.mode!=='story'||S.scr==='title'){cue='counter';chapterTrack=null;sceneSilent=false;return;}
+    if(S.mode!=='story'||S.scr==='title'){cue=S.scr==='end'?direction.credits:'counter';chapterTrack=null;sceneSilent=false;return;}
     const c=S.chapter;if(!c)return;
     if(c.view==='end'){cue=direction.credits;sceneSilent=false;return;}
     // Menus and the timeline keep the sound of the scene being read.

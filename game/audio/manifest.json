@@ -17,7 +17,7 @@
       "bytes": 1476242,
       "changes": "96 kbps stereo MP3, 44.1 kHz; volume -6 dB; fade in 0.8 s and fade out 1.95 s from 121 s; metadata replaced with credit.",
       "id": "counter",
-      "usage": "タイトル・通常モード"
+      "usage": "タイトル・通常モードの応対"
     },
     {
       "id": "story-ending",
@@ -35,7 +35,7 @@
       "sha256": "02b9d3a36e4052d5e45162b9c8e8fb70185364d632e7491293e82843ae2a8f8f",
       "bytes": 2431594,
       "duration": 202.55,
-      "usage": "ストーリーFIN・スタッフロール",
+      "usage": "通常モードの結果画面・ストーリーFIN・スタッフロール",
       "changes": "96 kbps stereo MP3, 44.1 kHz; two-pass loudness normalization -25 LUFS, peak -2 dBTP; 0.8 s fade in and 1.5 s fade out; credit metadata."
     },
     {

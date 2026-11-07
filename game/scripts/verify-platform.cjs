@@ -282,6 +282,26 @@ runSuites({
   scene.S.mode='normal';scene.S.scr='play';scene.s.sync();scene.step(650);await flush();
   assert.equal(scene.s.cue(),'counter');assert.equal(scene.media.src,scene.s.tracks.counter.source);
   assert.equal(scene.gains[1].gain.value,scene.s.levels.music,'normal-mode gain is unchanged');
+  // Normal results have their own Jazz cue; review and mute must not restart it.
+  const results=setup({state:'running'});results.S.panel=null;results.S.scr='play';results.s.unlock();await flush();
+  const counterSource=results.media.src;
+  results.S.scr='end';results.s.sync();
+  assert.equal(results.media.src,counterSource,'the result transition fades the counter track first');
+  results.step(650);await flush();
+  assert.equal(results.media.src,results.s.tracks['story-ending'].source,'normal results use Almost New');
+  results.media.currentTime=17;const resultLoads=results.calls.filter(c=>c==='load').length;
+  results.S.panel='log';results.s.sync();results.S.panel=null;results.s.sync();
+  assert.equal(results.media.currentTime,17);assert.equal(results.calls.filter(c=>c==='load').length,resultLoads,'result review keeps the same playback position');
+  results.hide(true);assert.equal(results.media.paused,true);results.hide(false);await flush();
+  assert.equal(results.media.currentTime,17,'returning from background keeps the result position');
+  results.s.toggle();results.S.scr='play';results.s.sync();results.S.scr='end';results.s.sync();
+  assert.equal(results.media.paused,true);assert.equal(results.calls.filter(c=>c==='load').length,resultLoads,'muted result navigation never fetches music');
+  results.s.toggle();await flush();assert.equal(results.media.src,results.s.tracks['story-ending'].source);
+  results.S.scr='play';results.s.sync();results.step(650);await flush();
+  assert.equal(results.media.src,counterSource,'retry returns to the counter Jazz');
+  results.S.scr='end';results.s.sync();results.step(650);await flush();
+  results.S.scr='title';results.s.sync();results.step(650);await flush();
+  assert.equal(results.media.src,counterSource,'returning to the title restores the counter Jazz');
   // Check audible/silent boundaries against the actual manuscript, not the wall clock.
   const quiet=setup({state:'running',transformSource:withQuietRanges});quiet.s.channel('room');quiet.s.unlock();await flush();quiet.S.panel=null;
 
@@ -392,7 +412,7 @@ runSuites({
   assert.deepEqual(published.map(a=>a.sha256).sort(),m.tracks.map(t=>t.sha256).sort(),'web export contains exactly the retained recordings');
   assert.equal(m.tracks.find(t=>t.id==='counter').sha256,'226713b2a022b3e3346abf8dcd9feff96adbd92f0e0ee2849290ba76408e21f0');
   for(const track of m.tracks){assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'audio',track.file))).digest('hex'),track.sha256);assert.ok(['CC0-1.0','CC-BY-4.0'].includes(track.license));assert.ok(scene.ui().includes(track.license_url)&&scene.ui().includes(track.url),'credits link each recording and its license');}
-  console.log('PASS continuous manuscript BGM, chapter and BAD END card fades, silent navigation, softer effects, authored-silence compatibility, unchanged normal-mode track, saved preferences, Safari gesture ordering, previews, interruption, visibility and native fallback.');
+  console.log('PASS continuous manuscript BGM, chapter and BAD END card fades, silent navigation, softer effects, authored-silence compatibility, normal response/result Jazz transitions, saved preferences, Safari gesture ordering, previews, interruption, visibility and native fallback.');
   })().catch(e=>{console.error(e);process.exitCode=1;});
  },
 
@@ -499,7 +519,9 @@ runSuites({
   assert.ok(g.stage.innerHTML.includes('Copyright (c) 2026 Memuro-Town'));
   assert.ok(g.stage.innerHTML.includes('Copyright (c) 2026 Memuro Town'));
   assert.ok(g.stage.innerHTML.includes('href="https://github.com/rtoki"'));
-  assert.ok(g.run('titleHTML()').includes('href="https://github.com/rtoki"'));
+  const title=g.run('titleHTML()');
+  assert.ok(!title.includes('個人開発')&&!title.includes('所属組織'),'the title omits the personal-development disclaimer');
+  assert.ok(title.includes('https://github.com/Memuro-Town/MADO'),'the MADO source remains visible');
   for(const mode of ['normal','story']){
    const welcome=g.run(`S.launchMode=${JSON.stringify(mode)};madoWelcomeHTML();`);
    const notice=welcome.indexOf('本作のストーリーはフィクションです。');
