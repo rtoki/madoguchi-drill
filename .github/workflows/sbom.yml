@@ -1,0 +1,77 @@
+# SPDX-FileCopyrightText: 2026 rtoki
+# SPDX-License-Identifier: MIT
+
+name: SBOM
+
+on:
+  push:
+    paths:
+      - .github/workflows/sbom.yml
+      - game/scripts/sbom.py
+      - game/package.json
+      - game/package-lock.json
+      - game/engine/version.json
+      - game/scenarios/komorebi/manifest.json
+  pull_request:
+    branches: [main]
+    paths:
+      - .github/workflows/sbom.yml
+      - game/scripts/sbom.py
+      - game/package.json
+      - game/package-lock.json
+      - game/engine/version.json
+      - game/scenarios/komorebi/manifest.json
+  workflow_dispatch:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+
+jobs:
+  generate:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Set up Node.js
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: "24"
+      - name: Set up Python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.12"
+      - name: Generate lockfile SBOMs
+        run: python3 game/scripts/sbom.py
+      - name: Save SBOMs and version metadata
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: sbom-${{ github.sha }}
+          path: game/build/sbom/*.json
+          if-no-files-found: error
+          retention-days: 90
+
+  attach-to-release:
+    if: github.event_name == 'release' && github.event.repository.private == false
+    needs: generate
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - name: Download this run's SBOMs
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: sbom-${{ github.sha }}
+          path: sbom
+      - name: Attach inventories to the published release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+        run: gh release upload "$RELEASE_TAG" sbom/*.json --clobber
